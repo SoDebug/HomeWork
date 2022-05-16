@@ -1,0 +1,5 @@
+-z -q -c -m"./Debug/imag912.map" -o"./Debug/imag912.out" -w -x -i"C:/CCStudio_v3.3/C5400/xdais/lib" -i"C:/CCStudio_v3.3/C5400/csl/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/bios/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/rtdx/lib/c5400" -i"C:/CCStudio_v3.3/C5400/cgtools/lib"
+"C:\Users\Johan\Desktop\DigitalImageBasicProcess\imagetest\fanse_grey as the descion value\Debug\imagefun1.obj"
+"C:\Users\Johan\Desktop\DigitalImageBasicProcess\imagetest\fanse_grey as the descion value\Debug\main.obj"
+"C:\Users\Johan\Desktop\DigitalImageBasicProcess\imagetest\fanse_grey as the descion value\Debug\vector.obj"
+"C:\Users\Johan\Desktop\DigitalImageBasicProcess\imagetest\fanse_grey as the descion value\dmcp.cmd"

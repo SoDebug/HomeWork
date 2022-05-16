@@ -1,0 +1,454 @@
+******************************************************************************
+         TMS320C54x COFF Linker PC v4.1.0                      
+******************************************************************************
+>> Linked Thu Apr 14 18:53:06 2022
+
+OUTPUT FILE NAME:   <./Debug/imag912.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00001408
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: VECT                    00000080   00000080  00000080  RWIX
+         EPROG                   00001000   00004000  000038ff  RWIX
+
+PAGE  1: EDATA                   00005000   0000a000  00009b28  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.vectors   0    00000080    00000080     
+                  00000080    00000080     vector.obj (.vectors)
+
+.switch    0    00001000    00000000     UNINITIALIZED
+
+.pinit     0    00001000    00000000     UNINITIALIZED
+
+.sysinit   0    00001000    00000000     UNINITIALIZED
+
+.text      0    00001000    0000383a     
+                  00001000    000003b2     imagefun1.obj (.text)
+                  000013b2    00000056     main.obj (.text)
+                  00001408    0000004a     rts.lib : boot.obj (.text)
+                  00001452    00000052             : exit.obj (.text)
+                  000014a4    0000009f             : f_add.obj (.text)
+                  00001543    00000020             : f_cmp.obj (.text)
+                  00001563    0000009a             : f_div.obj (.text)
+                  000015fd    00000001             : f_error.obj (.text)
+                  000015fe    00000039             : f_ftou.obj (.text)
+                  00001637    00000073             : f_mul.obj (.text)
+                  000016aa    00000009             : f_sub.obj (.text)
+                  000016b3    0000001c             : f_ultof.obj (.text)
+                  000016cf    0000001b             : f_utof.obj (.text)
+                  000016ea    00000050             : fclose.obj (.text)
+                  0000173a    00000077             : fflush.obj (.text)
+                  000017b1    00000180             : fopen.obj (.text)
+                  00001931    000000af             : fread.obj (.text)
+                  000019e0    000000e7             : fscanf.obj (.text)
+                  00001ac7    0000003f             : fseek.obj (.text)
+                  00001b06    0000014a             : fwrite.obj (.text)
+                  00001c50    00000014             : lmpy.obj (.text)
+                  00001c64    00000349             : lowlev.obj (.text)
+                  00001fad    0000000e             : memcpy.obj (.text)
+                  00001fbb    0000027d             : memory.obj (.text)
+                  00002238    00000031             : printf.obj (.text)
+                  00002269    00000005             : remove.obj (.text)
+                  0000226e    000002b5             : trgdrv.obj (.text)
+                  00002523    0000000c             : udiv.obj (.text)
+                  0000252f    00000067             : ungetc.obj (.text)
+                  00002596    00000068             : _bufread.obj (.text)
+                  000025fe    00000098             : _io_perm.obj (.text)
+                  00002696    00000007             : _lock.obj (.text)
+                  0000269d    00000b74             : _printfi.obj (.text)
+                  00003211    00000834             : _scanfi.obj (.text)
+                  00003a45    00000017             : args_main.obj (.text)
+                  00003a5c    00000057             : atoi.obj (.text)
+                  00003ab3    00000114             : ecvt.obj (.text)
+                  00003bc7    0000003c             : f_ftoi.obj (.text)
+                  00003c03    0000004b             : f_ftol.obj (.text)
+                  00003c4e    0000002a             : f_ltof.obj (.text)
+                  00003c78    00000005             : f_neg.obj (.text)
+                  00003c7d    0000010c             : fcvt.obj (.text)
+                  00003d89    0000006d             : fgetc.obj (.text)
+                  00003df6    0000006a             : fputc.obj (.text)
+                  00003e60    000000f6             : fputs.obj (.text)
+                  00003f56    000000a5             : ldiv.obj (.text)
+                  00003ffb    000000b4             : ldmsg.obj (.text)
+                  000040af    00000049             : ltoa.obj (.text)
+                  000040f8    00000020             : memccpy.obj (.text)
+                  00004118    0000002a             : memmov.obj (.text)
+                  00004142    00000087             : setvbuf.obj (.text)
+                  000041c9    000001cb             : strtod.obj (.text)
+                  00004394    00000155             : strtol.obj (.text)
+                  000044e9    000001c4             : strtold.obj (.text)
+                  000046ad    00000156             : strtoul.obj (.text)
+                  00004803    00000037             : idiv.obj (.text)
+
+.cinit     0    0000483a    000000c5     
+                  0000483a    00000009     rts.lib : exit.obj (.cinit)
+                  00004843    0000001e             : lowlev.obj (.cinit)
+                  00004861    00000003             : memory.obj (.cinit)
+                  00004864    00000006             : _lock.obj (.cinit)
+                  0000486a    00000091             : defs.obj (.cinit)
+                  000048fb    00000003             : errno.obj (.cinit)
+                  000048fe    00000001     --HOLE-- [fill = 0]
+
+.data      1    00000000    00000000     UNINITIALIZED
+
+.my_data   1    00005000    00000000     UNINITIALIZED
+
+.sysmem    1    00005000    00008000     UNINITIALIZED
+
+.bss       1    0000d000    000013d6     UNINITIALIZED
+                  0000d000    00000e5c     imagefun1.obj (.bss)
+                  0000de5c    000001cd     rts.lib : defs.obj (.bss)
+                  0000e029    00000190             : _printfi.obj (.bss)
+                  0000e1b9    000000d0             : trgdrv.obj (.bss)
+                  0000e289    00000064             : fcvt.obj (.bss)
+                  0000e2ed    00000064             : ecvt.obj (.bss)
+                  0000e351    0000005c             : lowlev.obj (.bss)
+                  0000e3ad    00000023             : exit.obj (.bss)
+                  0000e3d0    00000003             : memory.obj (.bss)
+                  0000e3d3    00000002             : _lock.obj (.bss)
+                  0000e3d5    00000001             : errno.obj (.bss)
+
+.stack     1    0000e3d6    000003e8     UNINITIALIZED
+
+.const     1    0000e7be    0000024a     
+                  0000e7be    0000007c     imagefun1.obj (.const)
+                  0000e83a    00000034     rts.lib : _printfi.obj (.const)
+                  0000e86e    00000028             : strtod.obj (.const)
+                  0000e896    00000028             : strtold.obj (.const)
+                  0000e8be    00000008             : fcvt.obj (.const)
+                  0000e8c6    00000008             : ecvt.obj (.const)
+                  0000e8ce    00000101             : ctype.obj (.const)
+                  0000e9cf    00000037     main.obj (.const)
+                  0000ea06    00000002     rts.lib : fputs.obj (.const)
+
+.cio       1    0000ea80    00000120     UNINITIALIZED
+                  0000ea80    00000120     rts.lib : ldmsg.obj (.cio)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+0000d000   .bss
+00000000   .data
+00001000   .text
+000014a1   C$$EXIT
+00004068   C$$IO$$
+000014a4   F$$ADD
+00001543   F$$COMPARE
+00001563   F$$DIV
+00003bc7   F$$FTOI
+00003c03   F$$FTOL
+000015fe   F$$FTOU
+00003c4e   F$$LTOF
+00001637   F$$MUL
+00003c78   F$$NEG
+000016aa   F$$SUB
+000016b3   F$$ULTOF
+000016cf   F$$UTOF
+00004803   I$$DIV
+0000481f   I$$MOD
+00002523   I$$UDIV
+00002528   I$$UMOD
+00003f56   L$$DIVS
+00003fa6   L$$DIVU
+00003f7e   L$$MODS
+00003fc2   L$$MODU
+00001c50   L$$MPY
+000011d0   _FanSe
+0000d45a   _GrayNum
+000024f3   _HOSTclock
+000022c4   _HOSTclose
+0000237f   _HOSTlseek
+0000226e   _HOSTopen
+000022f5   _HOSTread
+0000240d   _HOSTrename
+000024c3   _HOSTtime
+000023d5   _HOSTunlink
+0000233a   _HOSTwrite
+00001000   _ReadBMPHeadInfo
+0000d450   _T
+0000d458   _TotalPixel
+0000da5c   _U
+0000d65a   _UT
+0000ea80   __CIOBUF_
+000003e8   __STACK_SIZE
+00008000   __SYSMEM_SIZE
+ffffffff   ___binit__
+0000d000   ___bss__
+ffffffff   ___c_args__
+0000483a   ___cinit__
+00000000   ___data__
+00000000   ___edata__
+0000e3d6   ___end__
+0000483a   ___etext__
+ffffffff   ___pinit__
+00001000   ___text__
+00003a45   __args_main
+00002596   __buff_read
+00001901   __cleanup
+0000e3ce   __cleanup_ptr
+0000e8ce   __ctypes_
+00001771   __doflush
+0000e3cf   __dtors_ptr
+0000e028   __ft_end
+0000de5c   __ftable
+00000001   __lflags
+0000e3d3   __lock
+00002696   __nop
+0000269d   __printfi
+000025fe   __rd_ok
+00002697   __register_lock
+0000269a   __register_unlock
+00003211   __scanfi
+00005000   __sys_memory
+0000dee8   __tmpnams
+0000e3d4   __unlock
+00002643   __wrt_ok
+000014a1   _abort
+00001d30   _add_device
+00001161   _alloc_mem
+0000147f   _atexit
+00003a5c   _atoi
+0000d000   _bmp_head
+0000d04c   _bmp_palette
+00001408   _c_int00
+000020be   _calloc
+00001f21   _close
+0000dc5c   _dk
+00003ab3   _ecvt
+0000e3d5   _errno
+00001452   _exit
+000015fd   _f$$error
+000016ea   _fclose
+00003c7d   _fcvt
+0000173a   _fflush
+00003d95   _fgetc
+000017b1   _fopen
+00003e06   _fputc
+00003e78   _fputs
+00001931   _fread
+000021a8   _free
+000017cc   _freopen
+000019e0   _fscanf
+00001ac7   _fseek
+00001b06   _fwrite
+00003d89   _getc
+00003d8e   _getchar
+0000247e   _getenv
+0000d65c   _h
+0000d44c   _i_img
+0000d454   _img_col
+0000d452   _img_row
+0000d456   _line_size
+00001126   _load_data
+00001eda   _lseek
+000040af   _ltoa
+000013b2   _main
+0000204d   _malloc
+000040f8   _memccpy
+00001fad   _memcpy
+00004118   _memmove
+0000201e   _minit
+0000d44d   _o_img
+00001dd9   _open
+0000d44f   _palette_size
+00002238   _printf
+00003df6   _putc
+00003dfe   _putchar
+00003e60   _puts
+00001e56   _read
+0000406b   _readmsg
+000020e0   _realloc
+00002269   _remove
+00001dba   _remove_device
+00001f7f   _rename
+00001183   _save_data
+00001a02   _scanf
+00004142   _setvbuf
+0000d44e   _shadow_buf
+000041c9   _strtod
+00004394   _strtol
+000044e9   _strtold
+000046ad   _strtoul
+0000252f   _ungetc
+00001f67   _unlink
+0000d85c   _w
+00001e98   _write
+00003ffb   _writemsg
+ffffffff   binit
+0000483a   cinit
+00000000   edata
+0000e3d6   end
+0000483a   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   ___edata__
+00000000   ___data__
+00000000   edata
+00000000   .data
+00000001   __lflags
+000003e8   __STACK_SIZE
+00001000   ___text__
+00001000   _ReadBMPHeadInfo
+00001000   .text
+00001126   _load_data
+00001161   _alloc_mem
+00001183   _save_data
+000011d0   _FanSe
+000013b2   _main
+00001408   _c_int00
+00001452   _exit
+0000147f   _atexit
+000014a1   _abort
+000014a1   C$$EXIT
+000014a4   F$$ADD
+00001543   F$$COMPARE
+00001563   F$$DIV
+000015fd   _f$$error
+000015fe   F$$FTOU
+00001637   F$$MUL
+000016aa   F$$SUB
+000016b3   F$$ULTOF
+000016cf   F$$UTOF
+000016ea   _fclose
+0000173a   _fflush
+00001771   __doflush
+000017b1   _fopen
+000017cc   _freopen
+00001901   __cleanup
+00001931   _fread
+000019e0   _fscanf
+00001a02   _scanf
+00001ac7   _fseek
+00001b06   _fwrite
+00001c50   L$$MPY
+00001d30   _add_device
+00001dba   _remove_device
+00001dd9   _open
+00001e56   _read
+00001e98   _write
+00001eda   _lseek
+00001f21   _close
+00001f67   _unlink
+00001f7f   _rename
+00001fad   _memcpy
+0000201e   _minit
+0000204d   _malloc
+000020be   _calloc
+000020e0   _realloc
+000021a8   _free
+00002238   _printf
+00002269   _remove
+0000226e   _HOSTopen
+000022c4   _HOSTclose
+000022f5   _HOSTread
+0000233a   _HOSTwrite
+0000237f   _HOSTlseek
+000023d5   _HOSTunlink
+0000240d   _HOSTrename
+0000247e   _getenv
+000024c3   _HOSTtime
+000024f3   _HOSTclock
+00002523   I$$UDIV
+00002528   I$$UMOD
+0000252f   _ungetc
+00002596   __buff_read
+000025fe   __rd_ok
+00002643   __wrt_ok
+00002696   __nop
+00002697   __register_lock
+0000269a   __register_unlock
+0000269d   __printfi
+00003211   __scanfi
+00003a45   __args_main
+00003a5c   _atoi
+00003ab3   _ecvt
+00003bc7   F$$FTOI
+00003c03   F$$FTOL
+00003c4e   F$$LTOF
+00003c78   F$$NEG
+00003c7d   _fcvt
+00003d89   _getc
+00003d8e   _getchar
+00003d95   _fgetc
+00003df6   _putc
+00003dfe   _putchar
+00003e06   _fputc
+00003e60   _puts
+00003e78   _fputs
+00003f56   L$$DIVS
+00003f7e   L$$MODS
+00003fa6   L$$DIVU
+00003fc2   L$$MODU
+00003ffb   _writemsg
+00004068   C$$IO$$
+0000406b   _readmsg
+000040af   _ltoa
+000040f8   _memccpy
+00004118   _memmove
+00004142   _setvbuf
+000041c9   _strtod
+00004394   _strtol
+000044e9   _strtold
+000046ad   _strtoul
+00004803   I$$DIV
+0000481f   I$$MOD
+0000483a   ___cinit__
+0000483a   ___etext__
+0000483a   cinit
+0000483a   etext
+00005000   __sys_memory
+00008000   __SYSMEM_SIZE
+0000d000   ___bss__
+0000d000   .bss
+0000d000   _bmp_head
+0000d04c   _bmp_palette
+0000d44c   _i_img
+0000d44d   _o_img
+0000d44e   _shadow_buf
+0000d44f   _palette_size
+0000d450   _T
+0000d452   _img_row
+0000d454   _img_col
+0000d456   _line_size
+0000d458   _TotalPixel
+0000d45a   _GrayNum
+0000d65a   _UT
+0000d65c   _h
+0000d85c   _w
+0000da5c   _U
+0000dc5c   _dk
+0000de5c   __ftable
+0000dee8   __tmpnams
+0000e028   __ft_end
+0000e3ce   __cleanup_ptr
+0000e3cf   __dtors_ptr
+0000e3d3   __lock
+0000e3d4   __unlock
+0000e3d5   _errno
+0000e3d6   end
+0000e3d6   ___end__
+0000e8ce   __ctypes_
+0000ea80   __CIOBUF_
+ffffffff   pinit
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   binit
+ffffffff   ___pinit__
+
+[153 symbols]

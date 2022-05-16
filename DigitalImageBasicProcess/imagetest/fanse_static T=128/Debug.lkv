@@ -1,0 +1,5 @@
+-z -q -c -m"./Debug/imag912.map" -o"./Debug/imag912.out" -w -x -i"c:/ti/C5400/bios/lib" -i"c:/ti/C5400/dsk5416/lib" -i"c:/ti/c5400/rtdx/lib" -i"c:/ti/c5400/xdais/lib" -i"c:/ti/c5400/cgtools/lib"
+"D:\DSP Programs\imagetest\fanse\Debug\imagefun1.obj"
+"D:\DSP Programs\imagetest\fanse\Debug\main.obj"
+"D:\DSP Programs\imagetest\fanse\Debug\vector.obj"
+"D:\DSP Programs\imagetest\fanse\dmcp.cmd"
