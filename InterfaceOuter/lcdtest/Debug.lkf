@@ -1,0 +1,5 @@
+-z -q -c -m"./Debug/UARTTEST.map" -o"./Debug/UARTTEST.out" -x -i"C:/CCStudio_v3.3/C5400/xdais/lib" -i"C:/CCStudio_v3.3/C5400/csl/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/bios/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/rtdx/lib/c5400" -i"C:/CCStudio_v3.3/C5400/cgtools/lib"
+"C:\Users\Johan\Desktop\Interface_Outer\lcdtest\Debug\LCDtest.obj"
+"C:\Users\Johan\Desktop\Interface_Outer\lcdtest\Debug\vectors.obj"
+"C:\Users\Johan\Desktop\Interface_Outer\lcdtest\rts.lib"
+"C:\Users\Johan\Desktop\Interface_Outer\lcdtest\lcdtest.cmd"

@@ -1,0 +1,141 @@
+******************************************************************************
+         TMS320C54x COFF Linker PC v4.1.0                      
+******************************************************************************
+>> Linked Thu Apr 21 20:45:22 2022
+
+OUTPUT FILE NAME:   <ledtest.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00000216
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: VECS                    00000080   00000080  00000010  RWIX
+         PROG                    00000100   00000f00  000001bb  RWIX
+
+PAGE  1: DRAM_1                  00001000   00001000  00000435  RWIX
+         DMA_DATA                00003000   0000c000  00000000  RWIX
+
+PAGE  2: IO_EX                   00000000   0000fff0  00000000  RWIX
+         IO_IN                   0000fff0   0000000f  00000000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.vectors   0    00000080    00000000     UNINITIALIZED
+
+.cinit     0    00000080    00000010     
+                  00000080    00000009     rts.lib : exit.obj (.cinit)
+                  00000089    00000006             : _lock.obj (.cinit)
+                  0000008f    00000001     --HOLE-- [fill = 0]
+
+.text      0    00000100    000001bb     
+                  00000100    00000116     LED.obj (.text)
+                  00000216    0000004a     rts.lib : boot.obj (.text)
+                  00000260    00000054             : exit.obj (.text)
+                  000002b4    00000007             : _lock.obj (.text)
+
+.data      1    00001000    00000000     UNINITIALIZED
+
+stack      1    00001000    00000000     UNINITIALIZED
+
+.bss       1    00001000    00000025     UNINITIALIZED
+                  00001000    00000023     rts.lib : exit.obj (.bss)
+                  00001023    00000002             : _lock.obj (.bss)
+
+.stack     1    00001025    00000400     UNINITIALIZED
+
+.const     1    00001425    00000010     
+                  00001425    00000010     LED.obj (.const)
+
+buf        1    00003000    00000000     UNINITIALIZED
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00001000   .bss
+00001000   .data
+00000100   .text
+000002b1   C$$EXIT
+00000100   _InitDSP
+00000400   __STACK_SIZE
+ffffffff   ___binit__
+00001000   ___bss__
+ffffffff   ___c_args__
+00000080   ___cinit__
+00001000   ___data__
+00001000   ___edata__
+00001025   ___end__
+000002bb   ___etext__
+ffffffff   ___pinit__
+00000100   ___text__
+00001021   __cleanup_ptr
+00001022   __dtors_ptr
+00000001   __lflags
+00001023   __lock
+000002b4   __nop
+000002b5   __register_lock
+000002b8   __register_unlock
+00001024   __unlock
+000002b1   _abort
+0000028f   _atexit
+00000216   _c_int00
+000001fd   _delay
+00000260   _exit
+00000133   _main
+ffffffff   binit
+00000080   cinit
+00001000   edata
+00001025   end
+000002bb   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __lflags
+00000080   ___cinit__
+00000080   cinit
+00000100   .text
+00000100   _InitDSP
+00000100   ___text__
+00000133   _main
+000001fd   _delay
+00000216   _c_int00
+00000260   _exit
+0000028f   _atexit
+000002b1   C$$EXIT
+000002b1   _abort
+000002b4   __nop
+000002b5   __register_lock
+000002b8   __register_unlock
+000002bb   etext
+000002bb   ___etext__
+00000400   __STACK_SIZE
+00001000   ___bss__
+00001000   edata
+00001000   ___edata__
+00001000   .data
+00001000   .bss
+00001000   ___data__
+00001021   __cleanup_ptr
+00001022   __dtors_ptr
+00001023   __lock
+00001024   __unlock
+00001025   ___end__
+00001025   end
+ffffffff   pinit
+ffffffff   ___binit__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   ___c_args__
+
+[36 symbols]

@@ -1,0 +1,4 @@
+-z -q -c -m"./Debug/SEG7.map" -o"./Debug/SEG7.out" -x -i"c:/ti/C5400/bios/lib" -i"c:/ti/C5400/dsk5416/lib" -i"c:/ti/c5400/rtdx/lib" -i"c:/ti/c5400/xdais/lib" -i"c:/ti/c5400/cgtools/lib"
+"D:\LEDTEST\Debug\LED.obj"
+"D:\LEDTEST\rts.lib"
+"D:\LEDTEST\ledcmd.cmd"

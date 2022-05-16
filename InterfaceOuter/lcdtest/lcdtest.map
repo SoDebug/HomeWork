@@ -1,0 +1,163 @@
+******************************************************************************
+         TMS320C54x COFF Linker PC v4.1.0                      
+******************************************************************************
+>> Linked Thu Apr 21 21:52:58 2022
+
+OUTPUT FILE NAME:   <lcdtest.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00000418
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: VECS                    00000080   00000080  00000074  RWIX
+         PROG                    00000100   00000f00  0000054f  RWIX
+
+PAGE  1: DRAM_1                  00001000   00001000  000005a5  RWIX
+         DMA_DATA                00003000   0000c000  00000000  RWIX
+
+PAGE  2: IO_EX                   00000000   0000fff0  00000000  RWIX
+         IO_IN                   0000fff0   0000000f  00000000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.vectors   0    00000080    00000074     
+                  00000080    00000074     vectors.obj (.vectors)
+
+.text      0    00000100    000003bd     
+                  00000100    00000318     LCDtest.obj (.text)
+                  00000418    0000004a     rts.lib : boot.obj (.text)
+                  00000462    00000054             : exit.obj (.text)
+                  000004b6    00000007             : _lock.obj (.text)
+
+.cinit     0    000004bd    00000192     
+                  000004bd    00000182     LCDtest.obj (.cinit)
+                  0000063f    00000009     rts.lib : exit.obj (.cinit)
+                  00000648    00000006             : _lock.obj (.cinit)
+                  0000064e    00000001     --HOLE-- [fill = 0]
+
+.data      1    00001000    00000000     UNINITIALIZED
+
+stack      1    00001000    00000000     UNINITIALIZED
+
+.bss       1    00001000    000001a5     UNINITIALIZED
+                  00001000    00000180     LCDtest.obj (.bss)
+                  00001180    00000023     rts.lib : exit.obj (.bss)
+                  000011a3    00000002             : _lock.obj (.bss)
+
+.stack     1    000011a5    00000400     UNINITIALIZED
+
+buf        1    00003000    00000000     UNINITIALIZED
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00001000   .bss
+00001000   .data
+00000100   .text
+000004b3   C$$EXIT
+000002c8   _Display
+00000228   _Display4
+00000278   _Display5
+00000100   _InitDSP
+00000211   _LCDinit
+00001000   _NumTab
+0000014b   _OTUI1
+0000015e   _OTUI2
+00000171   _OUTD1
+00000184   _OUTD2
+00000400   __STACK_SIZE
+ffffffff   ___binit__
+00001000   ___bss__
+ffffffff   ___c_args__
+000004bd   ___cinit__
+00001000   ___data__
+00001000   ___edata__
+000011a5   ___end__
+000004bd   ___etext__
+ffffffff   ___pinit__
+00000100   ___text__
+000011a1   __cleanup_ptr
+000011a2   __dtors_ptr
+00000001   __lflags
+000011a3   __lock
+000004b6   __nop
+000004b7   __register_lock
+000004ba   __register_unlock
+000011a4   __unlock
+000004b3   _abort
+00000491   _atexit
+00000418   _c_int00
+00000133   _delay
+00000197   _display_cs0
+000001d4   _display_cs1
+00000462   _exit
+00000408   _main
+ffffffff   binit
+000004bd   cinit
+00001000   edata
+000011a5   end
+000004bd   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __lflags
+00000100   ___text__
+00000100   _InitDSP
+00000100   .text
+00000133   _delay
+0000014b   _OTUI1
+0000015e   _OTUI2
+00000171   _OUTD1
+00000184   _OUTD2
+00000197   _display_cs0
+000001d4   _display_cs1
+00000211   _LCDinit
+00000228   _Display4
+00000278   _Display5
+000002c8   _Display
+00000400   __STACK_SIZE
+00000408   _main
+00000418   _c_int00
+00000462   _exit
+00000491   _atexit
+000004b3   C$$EXIT
+000004b3   _abort
+000004b6   __nop
+000004b7   __register_lock
+000004ba   __register_unlock
+000004bd   cinit
+000004bd   ___etext__
+000004bd   etext
+000004bd   ___cinit__
+00001000   ___bss__
+00001000   ___data__
+00001000   _NumTab
+00001000   .bss
+00001000   .data
+00001000   ___edata__
+00001000   edata
+000011a1   __cleanup_ptr
+000011a2   __dtors_ptr
+000011a3   __lock
+000011a4   __unlock
+000011a5   ___end__
+000011a5   end
+ffffffff   pinit
+ffffffff   ___c_args__
+ffffffff   ___binit__
+ffffffff   binit
+ffffffff   ___pinit__
+
+[47 symbols]

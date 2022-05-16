@@ -1,0 +1,7 @@
+------------------------------  SEG7.pjt - Debug  ------------------------------
+"c:\ti\c5400\cgtools\bin\cl500" -g -q -fr"D:/LEDTEST/Debug" -d"_DEBUG" -@"Debug.lkf" "LED.c"
+
+"c:\ti\c5400\cgtools\bin\cl500" -@"Debug.lkf"
+
+Build Complete,
+  0 Errors, 0 Warnings, 0 Remarks.

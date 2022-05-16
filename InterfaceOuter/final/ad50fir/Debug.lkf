@@ -1,0 +1,6 @@
+-z -q -c -o"./Debug/ad50.out" -x -i"c:/ti/C5400/bios/lib" -i"c:/ti/C5400/dsk5416/lib" -i"c:/ti/c5400/rtdx/lib" -i"c:/ti/c5400/xdais/lib" -i"c:/ti/c5400/cgtools/lib"
+"D:\ad50fir\Debug\fir64.obj"
+"D:\ad50fir\Debug\main1.obj"
+"D:\ad50fir\Debug\vector.obj"
+"D:\ad50fir\rts.lib"
+"D:\ad50fir\ad50.cmd"

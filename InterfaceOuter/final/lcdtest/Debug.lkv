@@ -1,0 +1,5 @@
+-z -q -c -m"./Debug/UARTTEST.map" -o"./Debug/UARTTEST.out" -x -i"c:/ti/C5400/bios/lib" -i"c:/ti/C5400/dsk5416/lib" -i"c:/ti/c5400/rtdx/lib" -i"c:/ti/c5400/xdais/lib" -i"c:/ti/c5400/cgtools/lib"
+"D:\lcdtest\Debug\LCDtest.obj"
+"D:\lcdtest\Debug\vectors.obj"
+"D:\lcdtest\rts.lib"
+"D:\lcdtest\lcdtest.cmd"

@@ -1,0 +1,4 @@
+-z -q -c -m"./Debug/SEG7.map" -o"./Debug/SEG7.out" -x -i"C:/CCStudio_v3.3/C5400/xdais/lib" -i"C:/CCStudio_v3.3/C5400/csl/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/bios/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/rtdx/lib/c5400" -i"C:/CCStudio_v3.3/C5400/cgtools/lib"
+"C:\Users\Johan\Desktop\Interface_Outer\LEDTEST\Debug\LED.obj"
+"C:\Users\Johan\Desktop\Interface_Outer\LEDTEST\rts.lib"
+"C:\Users\Johan\Desktop\Interface_Outer\LEDTEST\ledcmd.cmd"

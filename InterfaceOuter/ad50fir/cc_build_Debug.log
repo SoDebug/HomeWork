@@ -1,0 +1,13 @@
+------------------------------  ad50.pjt - Debug  ------------------------------
+[fir64.asm] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -g -q -fr"C:/Users/Johan/Desktop/Interface_Outer/ad50fir/Debug" -d"_DEBUG" -@"Debug.lkf" "fir64.asm"
+
+[main1.c] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -g -q -fr"C:/Users/Johan/Desktop/Interface_Outer/ad50fir/Debug" -d"_DEBUG" -@"Debug.lkf" "main1.c"
+"main1.c", line 144: warning: variable "i" was set but never used
+
+[vector.asm] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -g -q -fr"C:/Users/Johan/Desktop/Interface_Outer/ad50fir/Debug" -d"_DEBUG" -@"Debug.lkf" "vector.asm"
+
+[Linking...] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -@"Debug.lkf"
+<Linking>
+
+Build Complete,
+  0 Errors, 1 Warnings, 0 Remarks.

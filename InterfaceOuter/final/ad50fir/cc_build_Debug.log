@@ -1,0 +1,12 @@
+------------------------------  ad50.pjt - Debug  ------------------------------
+"c:\ti\c5400\cgtools\bin\cl500" -g -q -fr"D:/ad50fir/Debug" -d"_DEBUG" -@"Debug.lkf" "fir64.asm"
+
+"c:\ti\c5400\cgtools\bin\cl500" -g -q -fr"D:/ad50fir/Debug" -d"_DEBUG" -@"Debug.lkf" "main1.c"
+"main1.c", line 144: warning: variable "i" was set but never used
+
+"c:\ti\c5400\cgtools\bin\cl500" -g -q -fr"D:/ad50fir/Debug" -d"_DEBUG" -@"Debug.lkf" "vector.asm"
+
+"c:\ti\c5400\cgtools\bin\cl500" -@"Debug.lkf"
+
+Build Complete,
+  0 Errors, 1 Warnings, 0 Remarks.

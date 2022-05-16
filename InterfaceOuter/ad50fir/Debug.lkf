@@ -1,0 +1,6 @@
+-z -q -c -o"./Debug/ad50.out" -x -i"C:/CCStudio_v3.3/C5400/xdais/lib" -i"C:/CCStudio_v3.3/C5400/csl/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/bios/lib" -i"C:/CCStudio_v3.3/bios_5_31_02/packages/ti/rtdx/lib/c5400" -i"C:/CCStudio_v3.3/C5400/cgtools/lib"
+"C:\Users\Johan\Desktop\Interface_Outer\ad50fir\Debug\fir64.obj"
+"C:\Users\Johan\Desktop\Interface_Outer\ad50fir\Debug\main1.obj"
+"C:\Users\Johan\Desktop\Interface_Outer\ad50fir\Debug\vector.obj"
+"C:\Users\Johan\Desktop\Interface_Outer\ad50fir\rts.lib"
+"C:\Users\Johan\Desktop\Interface_Outer\ad50fir\ad50.cmd"
