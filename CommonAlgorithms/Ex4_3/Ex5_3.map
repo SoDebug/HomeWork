@@ -1,0 +1,213 @@
+******************************************************************************
+         TMS320C54x COFF Linker PC v4.1.0                      
+******************************************************************************
+>> Linked Thu Mar 24 12:36:24 2022
+
+OUTPUT FILE NAME:   <Ex5_3.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00001d4f
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: PROG                    00001a00   00002800  00000772  RWIX
+
+PAGE  1: DATA                    00000200   00001800  00000ac9  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.switch    0    00001a00    00000000     UNINITIALIZED
+
+.text      0    00001a00    00000762     
+                  00001a00    0000034f     Ex5_3.obj (.text)
+                  00001d4f    0000004a     rts.lib : boot.obj (.text)
+                  00001d99    0000008a             : cos.obj (.text)
+                  00001e23    00000052             : exit.obj (.text)
+                  00001e75    0000009f             : f_add.obj (.text)
+                  00001f14    0000009a             : f_div.obj (.text)
+                  00001fae    00000001             : f_error.obj (.text)
+                  00001faf    0000003c             : f_ftoi.obj (.text)
+                  00001feb    0000002b             : f_itof.obj (.text)
+                  00002016    00000073             : f_mul.obj (.text)
+                  00002089    00000005             : f_neg.obj (.text)
+                  0000208e    00000009             : f_sub.obj (.text)
+                  00002097    0000008d             : sin.obj (.text)
+                  00002124    00000007             : _lock.obj (.text)
+                  0000212b    00000017             : args_main.obj (.text)
+                  00002142    00000020             : f_cmp.obj (.text)
+
+.cinit     0    00002162    00000010     
+                  00002162    00000009     rts.lib : exit.obj (.cinit)
+                  0000216b    00000006             : _lock.obj (.cinit)
+                  00002171    00000001     --HOLE-- [fill = 0]
+
+vect       0    00003f80    00000000     UNINITIALIZED
+
+.data      1    00000200    00000000     UNINITIALIZED
+
+.sysmem    1    00000200    00000000     UNINITIALIZED
+
+.bss       1    00000200    0000099b     UNINITIALIZED
+                  00000200    00000976     Ex5_3.obj (.bss)
+                  00000b76    00000023     rts.lib : exit.obj (.bss)
+                  00000b99    00000002             : _lock.obj (.bss)
+
+.stack     1    00000b9b    00000100     UNINITIALIZED
+
+.const     1    00000c9c    0000002e     
+                  00000c9c    00000012     rts.lib : sin.obj (.const)
+                  00000cae    00000012             : cos.obj (.const)
+                  00000cc0    0000000a     Ex5_3.obj (.const)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00000200   .bss
+00000200   .data
+00001a00   .text
+00001e72   C$$EXIT
+00001e75   F$$ADD
+00002142   F$$COMPARE
+00001f14   F$$DIV
+00001faf   F$$FTOI
+00001feb   F$$ITOF
+00002016   F$$MUL
+00002089   F$$NEG
+0000208e   F$$SUB
+00000200   _N
+00000100   __STACK_SIZE
+ffffffff   ___binit__
+00000200   ___bss__
+ffffffff   ___c_args__
+00002162   ___cinit__
+00000200   ___data__
+00000200   ___edata__
+00000b9b   ___end__
+00002162   ___etext__
+ffffffff   ___pinit__
+00001a00   ___text__
+0000212b   __args_main
+00000b97   __cleanup_ptr
+00000b98   __dtors_ptr
+00000001   __lflags
+00000b99   __lock
+00002124   __nop
+00002125   __register_lock
+00002128   __register_unlock
+00000b9a   __unlock
+00000b73   _a
+00001e72   _abort
+00001e50   _atexit
+00000b74   _b
+00000b75   _c
+00001d4f   _c_int00
+00001d99   _cos
+00001e23   _exit
+00000b71   _f
+00001fae   _f$$error
+00000b6f   _i
+00000b6e   _j
+00000b70   _k
+00000201   _m
+00001a00   _main
+00000b72   _n
+00000cc0   _pi
+00002097   _sin
+00000b68   _t_im
+00000b66   _t_re
+00000b6c   _v_im
+00000b6a   _v_re
+00000b64   _w_im
+00000b62   _w_re
+0000045a   _x_im
+00000202   _x_re
+0000090a   _y_im
+000006b2   _y_re
+ffffffff   binit
+00002162   cinit
+00000200   edata
+00000b9b   end
+00002162   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __lflags
+00000100   __STACK_SIZE
+00000200   _N
+00000200   ___bss__
+00000200   ___edata__
+00000200   ___data__
+00000200   .data
+00000200   edata
+00000200   .bss
+00000201   _m
+00000202   _x_re
+0000045a   _x_im
+000006b2   _y_re
+0000090a   _y_im
+00000b62   _w_re
+00000b64   _w_im
+00000b66   _t_re
+00000b68   _t_im
+00000b6a   _v_re
+00000b6c   _v_im
+00000b6e   _j
+00000b6f   _i
+00000b70   _k
+00000b71   _f
+00000b72   _n
+00000b73   _a
+00000b74   _b
+00000b75   _c
+00000b97   __cleanup_ptr
+00000b98   __dtors_ptr
+00000b99   __lock
+00000b9a   __unlock
+00000b9b   ___end__
+00000b9b   end
+00000cc0   _pi
+00001a00   .text
+00001a00   _main
+00001a00   ___text__
+00001d4f   _c_int00
+00001d99   _cos
+00001e23   _exit
+00001e50   _atexit
+00001e72   C$$EXIT
+00001e72   _abort
+00001e75   F$$ADD
+00001f14   F$$DIV
+00001fae   _f$$error
+00001faf   F$$FTOI
+00001feb   F$$ITOF
+00002016   F$$MUL
+00002089   F$$NEG
+0000208e   F$$SUB
+00002097   _sin
+00002124   __nop
+00002125   __register_lock
+00002128   __register_unlock
+0000212b   __args_main
+00002142   F$$COMPARE
+00002162   cinit
+00002162   etext
+00002162   ___cinit__
+00002162   ___etext__
+ffffffff   ___pinit__
+ffffffff   pinit
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   binit
+
+[67 symbols]

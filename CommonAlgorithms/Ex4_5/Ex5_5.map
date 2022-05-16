@@ -1,0 +1,246 @@
+******************************************************************************
+         TMS320C54x COFF Linker PC v4.1.0                      
+******************************************************************************
+>> Linked Thu Mar 24 13:22:33 2022
+
+OUTPUT FILE NAME:   <Ex5_5.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00001ed9
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: PROG                    00001a00   00002600  00000c92  RWIX
+
+PAGE  1: DATA                    00000200   00001800  00000a0f  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.switch    0    00001a00    00000000     UNINITIALIZED
+
+.text      0    00001a00    00000c7f     
+                  00001a00    0000043c     Ex5_5.obj (.text)
+                  00001e3c    0000009d     rts.lib : atan.obj (.text)
+                  00001ed9    0000004a             : boot.obj (.text)
+                  00001f23    0000008a             : cos.obj (.text)
+                  00001fad    00000052             : exit.obj (.text)
+                  00001fff    0000009f             : f_add.obj (.text)
+                  0000209e    00000020             : f_cmp.obj (.text)
+                  000020be    0000009a             : f_div.obj (.text)
+                  00002158    00000001             : f_error.obj (.text)
+                  00002159    0000003c             : f_ftoi.obj (.text)
+                  00002195    0000002b             : f_itof.obj (.text)
+                  000021c0    00000073             : f_mul.obj (.text)
+                  00002233    00000005             : f_neg.obj (.text)
+                  00002238    00000009             : f_sub.obj (.text)
+                  00002241    000000b3             : log10.obj (.text)
+                  000022f4    000000b0             : pow.obj (.text)
+                  000023a4    0000008d             : sin.obj (.text)
+                  00002431    000000b4             : sqrt.obj (.text)
+                  000024e5    00000007             : _lock.obj (.text)
+                  000024ec    00000088             : _log.obj (.text)
+                  00002574    00000017             : args_main.obj (.text)
+                  0000258b    00000096             : exp.obj (.text)
+                  00002621    00000021             : frexp.obj (.text)
+                  00002642    0000003d             : ldexp.obj (.text)
+
+.cinit     0    0000267f    00000013     
+                  0000267f    00000009     rts.lib : exit.obj (.cinit)
+                  00002688    00000006             : _lock.obj (.cinit)
+                  0000268e    00000003             : errno.obj (.cinit)
+                  00002691    00000001     --HOLE-- [fill = 0]
+
+vect       0    00003f80    00000000     UNINITIALIZED
+
+.data      1    00000200    00000000     UNINITIALIZED
+
+.sysmem    1    00000200    00000000     UNINITIALIZED
+
+.bss       1    00000200    00000877     UNINITIALIZED
+                  00000200    00000851     Ex5_5.obj (.bss)
+                  00000a51    00000023     rts.lib : exit.obj (.bss)
+                  00000a74    00000002             : _lock.obj (.bss)
+                  00000a76    00000001             : errno.obj (.bss)
+
+.stack     1    00000a77    00000100     UNINITIALIZED
+
+.const     1    00000b78    00000098     
+                  00000b78    0000001a     Ex5_5.obj (.const)
+                  00000b92    00000016     rts.lib : atan.obj (.const)
+                  00000ba8    00000014             : exp.obj (.const)
+                  00000bbc    00000012             : sin.obj (.const)
+                  00000bce    00000012             : cos.obj (.const)
+                  00000be0    00000012             : log10.obj (.const)
+                  00000bf2    0000000c             : _log.obj (.const)
+                  00000bfe    00000008             : sqrt.obj (.const)
+                  00000c06    00000006             : ldexp.obj (.const)
+                  00000c0c    00000004             : pow.obj (.const)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00000200   .bss
+00000200   .data
+00001a00   .text
+00001ffc   C$$EXIT
+00001fff   F$$ADD
+0000209e   F$$COMPARE
+000020be   F$$DIV
+00002159   F$$FTOI
+00002195   F$$ITOF
+000021c0   F$$MUL
+00002233   F$$NEG
+00002238   F$$SUB
+00000100   __STACK_SIZE
+ffffffff   ___binit__
+00000200   ___bss__
+ffffffff   ___c_args__
+0000267f   ___cinit__
+00000200   ___data__
+00000200   ___edata__
+00000a77   ___end__
+0000267f   ___etext__
+ffffffff   ___pinit__
+00001a00   ___text__
+00002574   __args_main
+00000a72   __cleanup_ptr
+00000a73   __dtors_ptr
+00000001   __lflags
+00000a74   __lock
+000024ec   __log
+000024e5   __nop
+000024e6   __register_lock
+000024e9   __register_unlock
+00000a75   __unlock
+00000596   _a
+00001ffc   _abort
+00001e3c   _atan
+00001fda   _atexit
+00000598   _b
+00001ed9   _c_int00
+00001f23   _cos
+0000059e   _d
+00000332   _db
+00000a76   _errno
+00001fad   _exit
+0000258b   _exp
+00002158   _f$$error
+00002621   _frexp
+00000266   _h
+00000200   _hd
+00000a50   _i
+00000592   _im
+00000591   _k
+00000590   _l
+00002642   _ldexp
+00002241   _log10
+0000058f   _m
+00001a00   _main
+0000058e   _n
+0000059a   _p
+0000058a   _pi
+000022f4   _pow
+00000594   _re
+000023a4   _sin
+00002431   _sqrt
+000002cc   _w
+0000058c   _wc
+0000059c   _wf
+000005a0   _x
+000007f8   _y
+ffffffff   binit
+0000267f   cinit
+00000200   edata
+00000a77   end
+0000267f   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __lflags
+00000100   __STACK_SIZE
+00000200   ___bss__
+00000200   .data
+00000200   ___data__
+00000200   ___edata__
+00000200   edata
+00000200   _hd
+00000200   .bss
+00000266   _h
+000002cc   _w
+00000332   _db
+0000058a   _pi
+0000058c   _wc
+0000058e   _n
+0000058f   _m
+00000590   _l
+00000591   _k
+00000592   _im
+00000594   _re
+00000596   _a
+00000598   _b
+0000059a   _p
+0000059c   _wf
+0000059e   _d
+000005a0   _x
+000007f8   _y
+00000a50   _i
+00000a72   __cleanup_ptr
+00000a73   __dtors_ptr
+00000a74   __lock
+00000a75   __unlock
+00000a76   _errno
+00000a77   ___end__
+00000a77   end
+00001a00   ___text__
+00001a00   _main
+00001a00   .text
+00001e3c   _atan
+00001ed9   _c_int00
+00001f23   _cos
+00001fad   _exit
+00001fda   _atexit
+00001ffc   C$$EXIT
+00001ffc   _abort
+00001fff   F$$ADD
+0000209e   F$$COMPARE
+000020be   F$$DIV
+00002158   _f$$error
+00002159   F$$FTOI
+00002195   F$$ITOF
+000021c0   F$$MUL
+00002233   F$$NEG
+00002238   F$$SUB
+00002241   _log10
+000022f4   _pow
+000023a4   _sin
+00002431   _sqrt
+000024e5   __nop
+000024e6   __register_lock
+000024e9   __register_unlock
+000024ec   __log
+00002574   __args_main
+0000258b   _exp
+00002621   _frexp
+00002642   _ldexp
+0000267f   ___etext__
+0000267f   cinit
+0000267f   etext
+0000267f   ___cinit__
+ffffffff   pinit
+ffffffff   ___c_args__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   ___binit__
+
+[75 symbols]
