@@ -1,0 +1,17 @@
+<html>  
+  <head>   
+        <title>对数比例尺</title>  
+  </head> 
+  <body>
+	<script src="../d3.v4.min.js" charset="utf-8"></script> 
+		<h1>运行结果请在Chrome看Console</h1>
+	<script>  
+		var x = d3.scaleLog()
+					 .domain([1,10000])
+					 .range([0,4]);
+		console.log(x(10));
+		console.log(x(100));
+		console.log(x(100));
+	</script> 
+   <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>
