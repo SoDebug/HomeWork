@@ -1,0 +1,84 @@
+******************************************************************************
+         TMS320C54x COFF Linker PC v4.1.0                      
+******************************************************************************
+>> Linked Thu Mar 31 19:28:41 2022
+
+OUTPUT FILE NAME:   <Ex4_1.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00001000
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: PROG                    00001000   00000100  0000001c  RWIX
+
+PAGE  1: DATA                    00000060   00000100  00000016  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.text      0    00001000    00000017     
+                  00001000    00000017     Ex4_1.obj (.text)
+
+.data      0    00001017    00000005     
+                  00001017    00000005     Ex4_1.obj (.data)
+
+STACK      1    00000060    00000010     UNINITIALIZED
+                  00000060    00000010     Ex4_1.obj (STACK)
+
+.bss       1    00000070    00000006     UNINITIALIZED
+                  00000070    00000006     Ex4_1.obj (.bss)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00000070   .bss
+00001017   .data
+00001000   .text
+ffffffff   ___binit__
+00000070   ___bss__
+ffffffff   ___c_args__
+00001017   ___data__
+0000101c   ___edata__
+00000076   ___end__
+00001017   ___etext__
+00001000   ___text__
+00000000   __lflags
+00001000   _c_int00
+ffffffff   binit
+0000101c   edata
+00000076   end
+00001017   etext
+00001004   start
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   __lflags
+00000070   ___bss__
+00000070   .bss
+00000076   end
+00000076   ___end__
+00001000   ___text__
+00001000   .text
+00001000   _c_int00
+00001004   start
+00001017   etext
+00001017   .data
+00001017   ___data__
+00001017   ___etext__
+0000101c   edata
+0000101c   ___edata__
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   binit
+
+[18 symbols]

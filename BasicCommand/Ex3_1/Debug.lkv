@@ -1,0 +1,3 @@
+-z -q -c -o"./Debug/Ex4_1.out" -x -i"c:/ti/C5400/bios/lib" -i"c:/ti/C5400/dsk5416/lib" -i"c:/ti/c5400/rtdx/lib" -i"c:/ti/c5400/xdais/lib" -i"c:/ti/c5400/cgtools/lib"
+"F:\software\DSP\DSP Programs\Ex3_1\Debug\Ex4_1.obj"
+"F:\software\DSP\DSP Programs\Ex3_1\Ex4_1.cmd"

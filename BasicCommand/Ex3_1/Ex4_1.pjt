@@ -1,0 +1,36 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectName="Ex4_1"
+ProjectDir="C:\Users\HP\Desktop\BasicCommand\Ex3_1\"
+ProjectType=Executable
+CPUFamily=TMS320C54XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="Ex4_1.asm"
+Source="Ex4_1.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -q -fr"C:\Users\HP\Desktop\BasicCommand\Ex3_1\Debug" -d"_DEBUG"
+
+["Compiler" Settings: "Release"]
+Options=-q -o2 -fr"C:\Users\HP\Desktop\BasicCommand\Ex3_1\Release"
+
+["DspBiosBuilder" Settings: "Debug"]
+Options=-v54
+
+["DspBiosBuilder" Settings: "Release"]
+Options=-v54
+
+["Linker" Settings: "Debug"]
+Options=-q -e_c_int00 -o".\Debug\Ex4_1.out" -x
+
+["Linker" Settings: "Release"]
+Options=-q -c -o".\Release\Ex4_1.out" -x
+

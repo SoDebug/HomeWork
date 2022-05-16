@@ -1,0 +1,3 @@
+-z -q -c -o"./Debug/Ex4_2.out" -x -i"d:/ti/5000/C5400/bios/lib" -i"d:/ti/5000/C5400/dsk5416/lib" -i"d:/ti/5000/c5400/rtdx/lib" -i"d:/ti/5000/c5400/xdais/lib" -i"d:/ti/5000/c5400/cgtools/lib"
+"E:\DSP\test\suanfa\DSP Programs\Ex4_2\Debug\Ex4_2.obj"
+"E:\DSP\test\suanfa\DSP Programs\Ex4_2\Ex4_2.cmd"

@@ -1,0 +1,92 @@
+******************************************************************************
+         TMS320C54x COFF Linker PC v4.1.0                      
+******************************************************************************
+>> Linked Thu Mar 31 19:29:13 2022
+
+OUTPUT FILE NAME:   <Ex4_5.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00001000
+
+
+MEMORY CONFIGURATION
+
+                  name            origin    length      used    attr    fill
+         ----------------------  --------  ---------  --------  ----  --------
+PAGE  0: PROG                    00001000   00000100  00000020  RWIX
+
+PAGE  1: DATA                    00000060   00000100  00000016  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.text      0    00001000    0000001c     
+                  00001000    0000001c     Ex4_5.obj (.text)
+
+.data      0    0000101c    00000004     
+                  0000101c    00000004     Ex4_5.obj (.data)
+
+STACK      1    00000060    00000010     UNINITIALIZED
+                  00000060    00000010     Ex4_5.obj (STACK)
+
+.bss       1    00000070    00000006     UNINITIALIZED
+                  00000070    00000006     Ex4_5.obj (.bss)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00000070   .bss
+0000101c   .data
+00001000   .text
+ffffffff   ___binit__
+00000070   ___bss__
+ffffffff   ___c_args__
+ffffffff   ___cinit__
+0000101c   ___data__
+00001020   ___edata__
+00000076   ___end__
+0000101c   ___etext__
+ffffffff   ___pinit__
+00001000   ___text__
+00000000   __lflags
+00001000   _c_int00
+ffffffff   binit
+ffffffff   cinit
+00001020   edata
+00000076   end
+0000101c   etext
+ffffffff   pinit
+00001004   start
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   __lflags
+00000070   ___bss__
+00000070   .bss
+00000076   end
+00000076   ___end__
+00001000   .text
+00001000   ___text__
+00001000   _c_int00
+00001004   start
+0000101c   etext
+0000101c   ___etext__
+0000101c   ___data__
+0000101c   .data
+00001020   edata
+00001020   ___edata__
+ffffffff   ___c_args__
+ffffffff   pinit
+ffffffff   ___binit__
+ffffffff   ___cinit__
+ffffffff   ___pinit__
+ffffffff   cinit
+ffffffff   binit
+
+[22 symbols]
