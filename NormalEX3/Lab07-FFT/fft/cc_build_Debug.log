@@ -1,0 +1,12 @@
+------------------------------  fft.pjt - Debug  ------------------------------
+[FFT.asm] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -g -q -fr"C:/Users/Administrator/Desktop/NormalEX3/Lab07-FFT/fft/Debug" -d"_DEBUG" -@"fft/Debug.lkf" "FFT.asm"
+
+[ffttable.asm] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -g -q -fr"C:/Users/Administrator/Desktop/NormalEX3/Lab07-FFT/fft/Debug" -d"_DEBUG" -@"fft/Debug.lkf" "ffttable.asm"
+
+[main.c] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -g -q -fr"C:/Users/Administrator/Desktop/NormalEX3/Lab07-FFT/fft/Debug" -d"_DEBUG" -@"fft/Debug.lkf" "main.c"
+
+[Linking...] "C:\CCStudio_v3.3\C5400\cgtools\bin\cl500" -@"Debug.lkf"
+<Linking>
+
+Build Complete,
+  0 Errors, 0 Warnings, 0 Remarks.
