@@ -1,0 +1,39 @@
+<html>
+<head>
+<script src="../d3.v3.min.js" charset="utf-8"></script>
+</head>
+<body>
+	<p>数据科学与大数据技术</p>
+	<p>《数据可视化》</p>
+	<script>
+		var temp=d3.selectAll("p");		//选择所有的p元素
+		dataset=["大数据专业新趋势","大数据与人工智能"];
+		temp.data(dataset)				//绑定数组dataset
+			.text(function(d,i){		//修改元素内容，function为自定义函数
+				return "No."+i+"："+d;//返回字符串
+			});
+		console.log(temp);
+		/*
+		var dataset=[1,2,3,4,5];				//定义数据数组
+		var temp=d3.selectAll("p");			//选取所有的p元素（数量未知）
+
+		var group=temp.data(dataset);			//绑定数据
+		var enter=group.enter();				//数据多于元素的部分
+		var exit=group.exit();					//元素多于数据的部分
+
+		group.text(function(d){
+						return d;
+		});									//根据数据修改原元素内容
+
+		enter.append("p")
+			 .text(function(d){
+						return d;
+			 });								//添加新的元素，内容为绑定的数据
+			
+		exit.remove();						//没有数据的元素直接删除
+*/
+	</script>
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>
+
+
