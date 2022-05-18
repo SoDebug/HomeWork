@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>基于D3的音乐可视化</title>
+  </head>
+  <body>
+    <audio id="audioElement" src="HeyJude.mp3" controls="controls"></audio>
+    <script src="../d3.v3.min.js" charset="utf-8"></script>
+    <script>
+		  var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+		  var audioElement = document.getElementById('audioElement');
+		  var audioSrc = audioCtx.createMediaElementSource(audioElement);
+		  var analyser = audioCtx.createAnalyser();
+
+		  //绑定分析器到音频媒体元素
+		  audioSrc.connect(analyser);
+		  audioSrc.connect(audioCtx.destination);
+
+		  var frequencyData = new Uint8Array(100);
+		  var width = 1200;
+		  var height =500;
+		  var innerR = 80;//内半径
+		  
+		  var dataset=new Array(100);
+		  for(var i=0;i<dataset.length;i++){
+					 dataset[i]=new Array();
+					 dataset[i][0]=120;
+					 dataset[i][1]=100+Math.floor(Math.random()*(255-100));					 
+		  }
+		  //转化数据为适合生成饼图的对象数组		
+		  var pie = d3.layout.pie()
+		                     .value(function(d){return d[0];});
+			
+		  var arcPath=d3.svg.arc()//内外半径		            
+				        .innerRadius(innerR);		
+
+		  var svg=d3.select("body")
+					.append("svg")
+					.attr("width",width)
+					.attr("height",height);
+			
+		  var arcs=svg.selectAll("path")
+					  .data(pie(dataset))//原生数据-->起止角度
+					  .enter()
+					  .append("path")
+					  .attr("transform", "translate(" + width/2 + "," + height/2 + ")")
+					  .attr("fill",function(d,i){//填充颜色
+							return 'rgb(0,0,'+dataset[i][1]+')';
+					    })
+					  .attr("stroke","#FFF")
+				      .attr("d",function(d,i){ 
+							arcPath.outerRadius(dataset[i][1]);
+							return arcPath(d);   //起止角度(内外半径)——>路径的参数
+					    });				
+					
+			  // 连续循环更新
+		  function renderChart() {
+			 requestAnimationFrame(renderChart);
+			 analyser.getByteFrequencyData(frequencyData);	
+			 //console.log(frequencyData);		 
+			 svg.selectAll('path')
+				 .data(pie(dataset))
+				 .attr("fill",function(d,i){//填充颜色
+					    return 'rgb(0,0,'+frequencyData[i]+')';
+				 })
+				 .attr("d",function(d,i){ 
+				        arcPath.outerRadius(frequencyData[i]+ innerR);
+						return arcPath(d); 
+				 });	
+		  }
+		 renderChart();
+	</script>
+  <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d912c94599ab449bbf0813bd77f413e8"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>
