@@ -1,0 +1,59 @@
+{"nodes":
+	[	
+		{"name":"李锦川","image":"li.JPG","intro":"——李锦川是一名普通大学生，现任重庆理工大学电气与电子工程学院团总支科协副会长、重庆市慈善总会阳光家教志愿服务队宣传组副组长。"},
+		{"name":"王培荣","image":"wang.JPG","intro":"——王培荣是重庆理工大学电气与电子工程学院的一名教授级老师，为119070201班班导师，以及数据可视化授课教师。"},
+		{"name":"陈芬","image":"chen.JPG","intro":"——陈芬是重庆理工大学电气与电子工程学院的一名老师，为119070201班班主任，以及DSP及应用授课教师。"},
+		{"name":"项宇星","image":"xiang.JPG","intro":"——项宇星是一名普通大学生，现为重庆理工大学电气与电子工程学院电子信息工程专业119070201班学生。"},
+		{"name":"杨桃","image":"yang.JPG","intro":"——杨桃是一名普通大学生，现为重庆理工大学电气与电子工程学院电子信息工程专业119070204班学生。"},
+		{"name":"李海波","image":"li.JPG","intro":"——李海波是一名普通大学生，现为重庆理工大学电气与电子工程学院电子信息工程专业119070201班学生。"},
+	    {"name":"程钰婷","image":"cheng.JPG","intro":"——程钰婷是重庆市一名高等院校的师范类毕业生，曾任重庆市慈善总会阳光家教志愿服务队主队长之一。"},
+		{"name":"李红","image":"li.JPG","intro":"——李红是重庆市一名高等院校的师范类毕业生，曾任重庆市慈善总会阳光家教志愿服务队垫江片区主要领队。"},
+		{"name":"赵华莲","image":"zhao.JPG","intro":"——赵华莲是重庆市一名高等院校的医学类毕业生，现任重庆市慈善总会阳光家教志愿服务队主队长之一，分管宣传组。"},
+		{"name":"童帅","image":"tong.JPG","intro":"——童帅是重庆市一名高等院校的医学类毕业生，曾任重庆市慈善总会阳光家教志愿服务队主队长之一，重庆片区话语人。"},
+		{"name":"陈婷","image":"chen.JPG","intro":"——陈婷是重庆市一名高等院校的医学类毕业生，现任重庆市慈善总会阳光家教志愿服务队主队长之一，重庆片区话语人。"},
+		{"name":"王克华","image":"wang.JPG","intro":"——王克华是重庆市垫江县实验中学(高中部)一名语文老师。曾任高2019级1班班主任。"},
+		{"name":"李昌德","image":"li.JPG","intro":"——李昌德是重庆市垫江县实验中学(高中部)一名化学老师。"},
+		{"name":"汪明俊","image":"wang2.JPG","intro":"——汪明俊是重庆市垫江县实验中学(高中部)2019级1班学生。"},
+		{"name":"余杭峰","image":"yu.JPG","intro":"——余杭峰是重庆市垫江县实验中学(高中部)2019级1班学生。"},
+		{"name":"郭佳","image":"guo.JPG","intro":"——郭佳是重庆市垫江县实验中学(高中部)2019级1班学生。"},
+		{"name":"张美月","image":"zhang.JPG","intro":"——张美月是重庆市垫江县垫江第十中学校初2016级14班班主任、历史老师。"},
+		{"name":"杨金花","image":"yang.JPG","intro":"——杨金花是重庆市垫江县垫江第十中学校初2016级14班语文老师。"},
+		{"name":"李玉霞","image":"li.JPG","intro":"——李玉霞是重庆市垫江县垫江第十中学校初2016级14班学生。"},
+		{"name":"陈海洋","image":"chen.JPG","intro":"——陈海洋是重庆市垫江县垫江第十中学校初2016级14班学生。"},
+		{"name":"赵平","image":"zhao.JPG","intro":"——赵平是重庆市垫江县垫江第十中学校初2016级14班学生。"}
+    ],
+"links":
+	[
+		{"source":0,"target":1,"relation":"师生"},{"source":0,"target":2,"relation":"师生"},{"source":0,"target":3,"relation":"同学&挚友"},
+	    {"source":0,"target":4,"relation":"同学&挚友"},{"source":0,"target":5,"relation":"室友"},{"source":0,"target":6,"relation":"同志"},
+		{"source":0,"target":7,"relation":"同志"},{"source":0,"target":8,"relation":"同志"},{"source":0,"target":9,"relation":"同志"},
+		{"source":0,"target":10,"relation":"同志"},{"source":0,"target":11,"relation":"师生"},{"source":0,"target":12,"relation":"师生"},
+		{"source":0,"target":13,"relation":"同学&挚友"},{"source":0,"target":14,"relation":"同学&挚友"},{"source":0,"target":15,"relation":"同学&挚友"},
+		{"source":0,"target":16,"relation":"师生"},{"source":0,"target":17,"relation":"师生"},{"source":0,"target":18,"relation":"同学&挚友"},
+		{"source":0,"target":19,"relation":"同学&挚友"},{"source":0,"target":20,"relation":"同学&挚友"},
+
+		{"source":1,"target":2,"relation":"同事"},{"source":1,"target":3,"relation":"师生"},{"source":1,"target":4,"relation":"师生"},
+		{"source":1,"target":5,"relation":"师生"},
+		{"source":2,"target":3,"relation":"师生"},{"source":2,"target":4,"relation":"师生"},{"source":2,"target":5,"relation":"师生"},
+		{"source":3,"target":4,"relation":"同学&挚友"},{"source":3,"target":5,"relation":"同学&挚友"},
+		{"source":4,"target":5,"relation":"同学&挚友"},
+
+		{"source":6,"target":7,"relation":"同志"},{"source":6,"target":8,"relation":"同志"},{"source":6,"target":9,"relation":"同志"},
+		{"source":6,"target":10,"relation":"同志"},
+		{"source":7,"target":8,"relation":"同志"},{"source":7,"target":9,"relation":"同志"},{"source":7,"target":10,"relation":"同志"},
+		{"source":8,"target":9,"relation":"同志"},{"source":8,"target":10,"relation":"同志"},
+		{"source":9,"target":10,"relation":"同志"},
+
+		{"source":11,"target":12,"relation":"同事"},{"source":11,"target":13,"relation":"师生"},{"source":11,"target":14,"relation":"师生"},
+		{"source":11,"target":15,"relation":"师生"},
+		{"source":12,"target":13,"relation":"师生"},{"source":12,"target":14,"relation":"师生"},{"source":12,"target":15,"relation":"师生"},
+		{"source":13,"target":14,"relation":"同学&挚友"},{"source":13,"target":15,"relation":"同学&挚友"},
+		{"source":14,"target":15,"relation":"同学&挚友"},
+		
+		{"source":16,"target":17,"relation":"同事"},{"source":16,"target":18,"relation":"师生"},{"source":16,"target":19,"relation":"师生"},
+		{"source":16,"target":20,"relation":"师生"},
+		{"source":17,"target":18,"relation":"师生"},{"source":17,"target":19,"relation":"师生"},{"source":17,"target":20,"relation":"师生"},
+		{"source":18,"target":19,"relation":"同学&挚友"},{"source":18,"target":19,"relation":"同学&挚友"},
+		{"source":19,"target":20,"relation":"同学&挚友"}
+	]
+}

@@ -1,0 +1,164 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<style>
+		body {
+			background-image: url("./img/background/background.png");
+			background-size: 100%;
+			background-blend-mode: soft-light;
+		}
+
+		.tooltip {
+			font-family: simsun;
+			font-size: 14px;
+			width: 200;
+			height: auto;
+			position: absolute;
+			text-align: left;
+			border-style: solid;
+			border-width: 2px;
+			background-color: white;
+			border-radius: 5px;
+		}
+
+		.node {
+			stroke: #fff;
+			stroke-width: 1.5px;
+		}
+
+		.link {
+			stroke: #999;
+			stroke-opacity: .6;
+		}
+	</style>
+</head>
+
+<body>
+	<script src="./rule/d3.v3.min.js"></script>
+	<script>
+		var width = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) * 1;
+		var height = (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) * 1;
+		var color = d3.scale.category20();
+		var svg = d3.select("body").append("svg")
+			.attr("width", width)
+			.attr("height", height);
+		/*-*-*-*-从json文件中读取节点信息-*-*-*-*/
+		d3.json("r_details.json", function (error, graph) {
+			console.log(graph);
+			var force = d3.layout.force(graph)
+				.links(graph.links)
+				.nodes(graph.nodes)
+				.size([width, height])
+				.linkDistance(250)
+				.charge(-2500)	//电荷强度
+				.start();  //开始仿真
+			/*-*-*-*-颜色-*-*-*-*/
+			var color = d3.scale.category20();
+			/*-*-*-*-连线-*-*-*-*/
+			var lines = svg.selectAll(".forceLine")
+				.data(graph.links)
+				.enter()
+				.append("line")
+				.attr("class", "forceLine")
+				.style("stroke", "gray")
+				.style("opacity", 0.4)
+				.style("stroke-width", 2);
+			/*-*-*-*-关系文字-*-*-*-*/
+			var edges_text = svg.selectAll(".linetext")
+				.data(graph.links)
+				.enter()
+				.append("text")
+				.attr("class", "linetext")
+				.text(function (d) {
+					return d.relation;
+				})
+				.style("stroke", "gray")
+				.style("font-size", 10);
+			var img_h = 50;
+			var img_w = 50;
+			var radius = 23;
+			/*-*-*-*-圆框并引用图片-*-*-*-*/
+			var circles = svg.selectAll("forceCircle")
+				.data(graph.nodes)
+				.enter()
+				.append("circle")
+				.attr("class", "forceCircle")
+				.attr("r", radius)
+				.style("stroke", "DarkGray")
+				.style("stroke-width", "1.0px")
+				.attr("fill", function (d, i) {
+					//创建圆形图片
+					var defs = svg.append("defs").attr("id", "imgdefs");
+					var catpattern = defs.append("pattern")
+						.attr("id", "catpattern" + i)
+						.attr("height", 1)
+						.attr("width", 1);
+					catpattern.append("image")
+						.attr("x", - (img_w / 2 - radius + 0.8))
+						.attr("y", - (img_h / 2 - radius + 3.0))
+						.attr("width", img_w + 11)
+						.attr("height", img_h + 6)
+						.attr("xlink:href", "img/" + d.image);
+					return "url(#catpattern" + i + ")";
+				})
+				.call(force.drag);
+			/*-*-*-*-节点名-*-*-*-*/
+			var texts = svg.selectAll(".forceText")
+				.data(graph.nodes)
+				.enter()
+				.append("text")
+				.attr("class", "forceText")
+				.attr("x", function (d) { return d.x; })
+				.attr("y", function (d) { return d.y; })
+				.style("stroke", "#336666")
+				.style("stroke-family", "仿宋")
+				.style("font-size", "12px")
+				.attr("dx", "-1.5em")
+				.attr("dy", "3em")
+				.text(function (d) { return d.name; });
+
+			force.on("tick", function () {
+				lines.attr("x1", function (d) { return d.source.x; });
+				lines.attr("y1", function (d) { return d.source.y; });
+				lines.attr("x2", function (d) { return d.target.x; });
+				lines.attr("y2", function (d) { return d.target.y; });
+				circles.attr("cx", function (d) { return d.x; });
+				circles.attr("cy", function (d) { return d.y; });
+				texts.attr("x", function (d) { return d.x; });
+				texts.attr("y", function (d) { return d.y; });
+				edges_text.attr("x", function (d) { return (d.source.x + d.target.x) / 2; });
+				edges_text.attr("y", function (d) { return (d.source.y + d.target.y) / 2; });
+			});
+
+			//添加一个提示框(需要提前对框(tolltip)进行定义)
+			var tooltip = d3.select("body")
+				.append("div")
+				.attr("class", "tooltip")
+				.style("opacity", 0.0);
+
+			circles.on("mouseover", function (d) {
+				var Catcher = svg.selectAll("circle")
+				d3.select(this)
+					.attr("r", radius * 1.1)
+					.style("stroke", "#40E0D0")
+					.style("stroke-width", "5.0px")
+				tooltip.html(d.intro + "<br />")
+					.style("left", (d3.event.pageX) + "px")
+					.style("top", (d3.event.pageY + 20) + "px")
+					.style("opacity", 1.0);
+				d3.select(this)
+					.style("cursor", "move");
+			})
+				.on("mouseout", function (d) {
+					var Catcher = svg.selectAll("circle")
+						.attr("r", radius)
+						.style("stroke", "DarkGray")
+						.style("stroke-width", "1.0px")
+					tooltip.style("opacity", 0.0);
+				});
+		});
+	</script>
+</body>
+
+</html>
