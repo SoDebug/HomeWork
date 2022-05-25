@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+     <title>箭头示例</title>
+     <style type="text/css">
+        path {
+            fill: blue;
+            stroke: #666;
+            stroke-width: 1px;
+        }
+
+        circle {
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <svg width="800" height="600">
+        <defs>
+            <marker id="arrow" markerUnits="strokeWidth" markerWidth="20" markerHeight="20" viewBox="0 0 20 20"
+                refX="30" refY="10" orient="auto">
+                <path d="M0,5 L20,10 L0,15 L0,5" fill="red"></path>
+            <marker id="arrow2" markerUnits="strokeWidth" markerWidth="20" markerHeight="20" viewBox="0 0 20 20"
+                refX="-10" refY="10" orient="auto">
+                <path d="M0,10 L20,5 L20,15 L0,10" fill="red"></path>
+            </marker>
+        </defs>
+        <circle r="10" fill="#1f77b4" style="opacity: 1;" cx="100" cy="100">
+        </circle>
+        <circle r="10" fill="#aec7e8" style="opacity: 1;" cx="150" cy="150">
+        </circle>
+
+        <path id="edgepath1" class="edges" marker-end="url(#arrow)" marker-start="url(#arrow2)" d="M100,100l50,50"></path>
+    </svg>
+</body>
+
+</html>
