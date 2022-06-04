@@ -1,0 +1,34 @@
+/* 定义全局色板 */
+:root {
+    /* 主蓝色，按钮，社交图标 */
+    --primary-color: #71b3dd;
+    /* 主蓝色，深，导航 */
+    --primary-dark-color: #4489b5;
+    --text-color-gray: #8b979f;
+    --text-color-light-gray: #c1c7cb;
+    --text-color-dark-gray: #5a6f7c;
+}
+
+/* 社交按钮部分 */
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+}
+footer ul li {
+    list-style: none;
+    margin: auto;
+}
+footer .fab{
+    color: var(--primary-color);
+    font-size: 24px;
+}
+footer .fas{
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--规则配置-->
+    <script type="text/javascript" src="./src/rule/echarts.min.js"></script>
+    <script type="text/javascript" src="./src/rule/bmap.min.js"></script>
+    <script type="text/javascript" src="./src/rule/jquery.js"></script>
+    <!--引用BaiDu Maps API-->
+    <script type="text/javascript"
+        src="http://api.map.baidu.com/api?v=2.0&ak=lgj1icmXqYZaTf7V9WOs7Hj1FspANFSE"></script>
+    <!--CSS Style规则配置-->
+    <style>
+        @import url(./src/css/style_beta.css);
+        @import url(./src/css/style.css);
+        @import url(./src/css/all.css);
+    </style>
+    <title>李锦川的简介</title>
+</head>
+<div id="Map"></div>
+
+<body>
+    <!--读取Json数据-->
+    <script type="text/javascript" src="./src/javascript/Def_fun.js"></script>
+    <div class="container">
+        <h1 id="title" align="center">***</h1>
+        <!-- 简历卡片里具体的信息 -->
+        <div class="info-content">
+            <!-- 1.基本信息 -->
+            <div class="basic-info">
+                <div class="content">
+                    <h2 id="basic">基本信息</h2>
+                    <div id="private-info" class="private-info">
+                        <div id="Name">姓名：</div>
+                        <div id="Tel">电话： </div>
+                        <div id="Email"> 邮箱： </div>
+                    </div>
+                </div>
+                <!-- 放上你的帅照 -->
+                <aside>
+                    <img class="me" src="./src/img/photo.jpg" alt="">
+                </aside>
+
+            </div>
+            <!-- 2.教育背景 -->
+            <div class="education">
+                <h2 id="education">教育背景</h2>
+                <div id="school">
+                    <div id="edu_content">xxxx.09~xxxx.06 &nbsp; xxx大学 &nbsp; xxx专业 &nbsp; x士</div>
+                    <div id="GPA">未初始化</div>
+                    <div id="classes_basic">专业基础：未初始化 </div>
+                    <div id="classes_basic_fill"> 未初始化 </div>
+                    <div id="classes_core">专业核心：未初始化</div>
+                    <div id="classes_core_fill"> 未初始化 </div>
+                    <div id="classes_option">专业选修：未初始化 </div>
+                    <div id="classes_option_fill">未初始化</div>
+                </div>
+                <!-- 3.工作经历 -->
+                <div class="work-info">
+                    <h2 id="work-info">大学经历</h2>
+                    <div id="work">
+                        <div id="stu-work">未初始化</div>
+                        <div id="stu-work_fill">未初始化</div>
+                        <div id="com-work">未初始化</div>
+                        <div id="com-work_fill">未初始化</div>
+                    </div>
+                </div>
+                <!-- 4.专业技能 -->
+                <div class="skill-info">
+                    <h2 id="sill-info">专业技能</h2>
+                    <div id="skill">
+                    <div id="lan">编程语言：</div>
+                    <div id="lan_fill">编程语言：</div>
+                    <div id="En_Level">英语水平：</div>
+                    <div id="En_Level_fill"></div>
+                </div>
+                <!-- 5.社交图标 -->
+                <footer>
+                    <!-- QQ -->
+                    <ul>
+                        <li>
+                            <a href="./images/我们的公众号.jpg">
+                                <i class="fab fa-qq"></i>
+                            </a>
+                        </li>
+                        <!-- 微信 -->
+                        <li>
+                            <a href="./images/我们的公众号.jpg">
+                                <i class="fab fa-weixin"></i>
+                            </a>
+                        </li>
+                        <!-- git -->
+                        <li>
+                            <a href="https://gitee.com/VisInfoStudio">
+                                <i class="fab fa-git"></i>
+                            </a>
+                        </li>
+                        <!-- 公众号 -->
+                        <li>
+                            <a href="./images/我们的公众号.jpg">
+                                <i class="fas fa-users"></i>
+                            </a>
+                        </li>
+                        <!-- 公司网址 -->
+                        <li>
+                            <a href="http://vis-info-studio.gitee.io/analysis-service/">
+                                <i class="fas fa-handshake"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+        <script type="text/javascript" src="./src/javascript/body.js"></script>
+</body>
+
+</html>
