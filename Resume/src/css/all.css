@@ -1784,7 +1784,7 @@ readers do not read off random characters that represent icons */
 
 .fa-gifts:before {
   content: "\f79c"; }
-
+/* 底栏布局(git) */
 .fa-git:before {
   content: "\f1d3"; }
 
@@ -3039,6 +3039,7 @@ readers do not read off random characters that represent icons */
 .fa-python:before {
   content: "\f3e2"; }
 
+/* 底栏布局(QQ) */
 .fa-qq:before {
   content: "\f1d6"; }
 
@@ -4238,7 +4239,7 @@ readers do not read off random characters that represent icons */
 
 .fa-weight-hanging:before {
   content: "\f5cd"; }
-
+/* 底栏布局(微信) */
 .fa-weixin:before {
   content: "\f1d7"; }
 

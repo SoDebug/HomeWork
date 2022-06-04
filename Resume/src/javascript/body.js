@@ -35,9 +35,9 @@ readTextFile("./src/json/information.json", function (text) {
     Change('classes_core_fill', get_className(1));
     Change('classes_option', get_classType(2));
     Change('classes_option_fill', get_className(2));
-    Change('stu-work', data.data[9].经历[0][0][0].name);
+    Change('stu-work', data.data[9].经历[0][0][0].name+"：");
     Change('stu-work_fill', data.data[9].经历[0][0][1].time[0][0] + "：" + "<br>" + data.data[9].经历[0][0][2].job[0][0] + "<br>" + "<br>" + data.data[9].经历[0][0][1].time[1][1] + "：" + "<br>" + data.data[9].经历[0][0][2].job[1][1]);
-    Change('com-work', data.data[9].经历[1][1][0].name);
+    Change('com-work', data.data[9].经历[1][1][0].name+"：");
     // console.log(data.data[9].经历[1][1][1].details[0][0]);
     function get_com() {
         let words = '';
