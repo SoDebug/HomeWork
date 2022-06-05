@@ -100,7 +100,13 @@ footer .fas {
 #Map {
     width: 20%;
     height: 40%;
-    position: absolute;
+    position: Fixed;
+    top: 200px;
+    left: 25px;
+    z-index: -1;
+    /* position: relative;
+    top:50px;
+    left: 1000px; */
 }
 
 /*屏蔽百度相关声明*/
@@ -274,4 +280,52 @@ div p:hover {
 footer {
     margin-top: 20px;
     text-align: center;
+}
+
+/* 电荷相关定义 */
+.node {
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+.link {
+    stroke: #999;
+    stroke-opacity: .6;
+}
+
+/* 电荷相关 */
+force_1 {
+    position: Fixed;
+    top: 5px;
+    left: 28px;
+}
+
+force_2 {
+    position: Fixed;
+    top: 80px;
+    right: 40px;
+}
+
+force_3 {
+    position: Fixed;
+    top: 180px;
+    left: 0px;
+}
+
+force_4 {
+    position: Fixed;
+    top: 380px;
+    right: 180px;
+}
+
+force_5 {
+    position: Fixed;
+    top: 480px;
+    left: 160px;
+}
+
+force_6 {
+    position: Fixed;
+    top: 600px;
+    right: 200px;
 }

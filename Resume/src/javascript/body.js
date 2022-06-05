@@ -62,3 +62,6 @@ readTextFile("./src/json/information.json", function (text) {
     Change('En_Level', data.data[6].专业技能[0].type[0].name+"：");
     Change('En_Level_fill', data.data[6].专业技能[0].type[1].fill);
 });
+for(let i=1;i<=6;i++){
+    Change('forceSvg',"<script>"+force("./src/json/force.json","force_"+i,200,200)+"</script>")
+};

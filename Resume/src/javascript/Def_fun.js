@@ -194,3 +194,44 @@ function AddClass(id_name, class_name) {
 function Change(id_name, content) {
     document.getElementById(id_name).innerHTML = content;
 };
+// 电荷作用力
+function force(path,where,width,height) {
+    // let width = 50;
+    // let height = 50;
+    let color = d3.scale.category20();
+    var force = d3.layout.force()
+        .charge(-120)
+        .linkDistance(40)
+        .size([width, height]);
+    let svg = d3.select(where).append("svg")
+        .attr("width", width)
+        .attr("height", height);
+    d3.json(path, function (error, graph) {
+        console.log(graph);
+        force.nodes(graph.nodes)
+            .links(graph.links)
+            .start();
+
+        let node = svg.selectAll(".node")
+            .data(graph.nodes)
+            .enter().append("circle")
+            .attr("class", "node")
+            .attr("r", 10)
+            .style("fill", function (d) { return color(d.group); })
+            .call(force.drag);
+        let link = svg.selectAll(".link")
+            .data(graph.links)
+            .enter().append("line")
+            .attr("class", "link")
+            .style("stroke-width", function (d) { return Math.sqrt(d.value); });
+        force.on("tick", function () {
+            link.attr("x1", function (d) { return d.source.x; })
+                .attr("y1", function (d) { return d.source.y; })
+                .attr("x2", function (d) { return d.target.x; })
+                .attr("y2", function (d) { return d.target.y; });
+
+            node.attr("cx", function (d) { return d.x; })
+                .attr("cy", function (d) { return d.y; });
+        });
+    });
+}
