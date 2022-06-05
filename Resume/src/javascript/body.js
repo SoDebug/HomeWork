@@ -35,9 +35,9 @@ readTextFile("./src/json/information.json", function (text) {
     Change('classes_core_fill', get_className(1));
     Change('classes_option', get_classType(2));
     Change('classes_option_fill', get_className(2));
-    Change('stu-work', data.data[9].经历[0][0][0].name+"：");
+    Change('stu-work', data.data[9].经历[0][0][0].name + "：");
     Change('stu-work_fill', data.data[9].经历[0][0][1].time[0][0] + "：" + "<br>" + data.data[9].经历[0][0][2].job[0][0] + "<br>" + "<br>" + data.data[9].经历[0][0][1].time[1][1] + "：" + "<br>" + data.data[9].经历[0][0][2].job[1][1]);
-    Change('com-work', data.data[9].经历[1][1][0].name+"：");
+    Change('com-work', data.data[9].经历[1][1][0].name + "：");
     // console.log(data.data[9].经历[1][1][1].details[0][0]);
     function get_com() {
         let words = '';
@@ -52,12 +52,13 @@ readTextFile("./src/json/information.json", function (text) {
         let words = "";
         let i = 0;
         for (i; i < data.data[10].技能[1].details.length; i++) {
-            words = words + data.data[10].技能[1].details[i][i]+ ' &nbsp; ' ;
+            words = words + data.data[10].技能[1].details[i][i] + ' &nbsp; ';
             // console.log(words)
         }
         return words;
     }
-    Change('lan', data.data[10].技能[0].name+"：");
+    Change('lan', data.data[10].技能[0].name + "：");
     Change('lan_fill', get_lan());
-    Change('En_Level_fill',data.data[6].专业技能[0].type[0].name);
+    Change('En_Level', data.data[6].专业技能[0].type[0].name+"：");
+    Change('En_Level_fill', data.data[6].专业技能[0].type[1].fill);
 });
