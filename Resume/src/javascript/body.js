@@ -10,8 +10,6 @@ readTextFile("./src/json/information.json", function (text) {
     console.log(data)
     Change('Name', "姓名：" + data.data[0].name);
     Change('Tel', "电话：" + data.data[2].phone);
-    // console.log(data.data[7].修读课程[0].type[1].value.length);
-    // console.log(data.data[7].修读课程[0].type[1].value[1][1]);
     Change('Email', "邮箱：" + data.data[1].email);
     Change('edu_content', data.data[4].本科大学[1].time + ' &nbsp; ' + data.data[4].本科大学[0].location + ' &nbsp; ' + data.data[3].专业 + ' &nbsp; ' + data.data[5].学位);
     Change('GPA', data.data[8].绩点[0].name + "：" + data.data[8].绩点[1].value)
@@ -19,7 +17,6 @@ readTextFile("./src/json/information.json", function (text) {
     function get_className(i) {
         var j = 0;
         let words = '';
-        // let words=data.data[7].修读课程[i].type[0].name+'：'+'<br>';
         for (j; j < (data.data[7].修读课程[i].type[1].value.length); j++) {
             words = words + data.data[7].修读课程[i].type[1].value[j][j] + ' &nbsp; ';
         };
@@ -38,7 +35,6 @@ readTextFile("./src/json/information.json", function (text) {
     Change('stu-work', data.data[9].经历[0][0][0].name + "：");
     Change('stu-work_fill', data.data[9].经历[0][0][1].time[0][0] + "：" + "<br>" + data.data[9].经历[0][0][2].job[0][0] + "<br>" + "<br>" + data.data[9].经历[0][0][1].time[1][1] + "：" + "<br>" + data.data[9].经历[0][0][2].job[1][1]);
     Change('com-work', data.data[9].经历[1][1][0].name + "：");
-    // console.log(data.data[9].经历[1][1][1].details[0][0]);
     function get_com() {
         let words = '';
         let i = 0;
@@ -53,7 +49,6 @@ readTextFile("./src/json/information.json", function (text) {
         let i = 0;
         for (i; i < data.data[10].技能[1].details.length; i++) {
             words = words + data.data[10].技能[1].details[i][i] + ' &nbsp; ';
-            // console.log(words)
         }
         return words;
     }
@@ -65,3 +60,6 @@ readTextFile("./src/json/information.json", function (text) {
 for(let i=1;i<=6;i++){
     Change('forceSvg',"<script>"+force("./src/json/force.json","force_"+i,200,200)+"</script>")
 };
+Pie2(400,400,"svg_pie",80);
+Hist(400,400,"svg_hist","./src/json/hist.json");
+music(200,200,20,"svg_music");

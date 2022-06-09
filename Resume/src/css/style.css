@@ -1,3 +1,7 @@
+/* class_id:use "#"
+div_id:use "."
+<></>:use "" */
+
 /*启动动画相关布局*/
 html,
 body,
@@ -16,15 +20,12 @@ iframe {
     z-index: 999;
 }
 
-.spinner-icon {
-    display: none !important;
-}
-
 .progress {
     border: 1px solid;
     padding: 1px;
 }
 
+/* 进度条布局位置 */
 .splash {
     position: absolute;
     top: 40%;
@@ -33,76 +34,35 @@ iframe {
     margin: auto;
 }
 
-.splash img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100px;
-    width: 100px;
-}
-
+/* 显示进度条的长度配置 */
 .card {
     background-color: #f7f7f7;
     padding: 20px 25px 15px;
     margin: 0 auto 25px;
     width: 380px;
-    /*-moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);*/
 }
 
+/* 进度条的配置 */
 .mybar {
-    background: #29d;
+    background: rgb(165, 21, 226);
     height: 10px;
 }
 
+/* 进度条加载相关配置 */
 .progress {
     height: 10px;
     overflow: hidden;
 }
 
-/* 定义全局色板 */
-:root {
-    /* 主蓝色，按钮，社交图标 */
-    --primary-color: #71b3dd;
-    /* 主蓝色，深，导航 */
-    --primary-dark-color: #4489b5;
-    --text-color-gray: #8b979f;
-    --text-color-light-gray: #c1c7cb;
-    --text-color-dark-gray: #5a6f7c;
-}
-
-footer ul {
-    display: flex;
-}
-
-footer ul li {
-    list-style: none;
-    margin: auto;
-}
-
-footer .fab {
-    color: var(--primary-color);
-    font-size: 24px;
-}
-
-footer .fas {
-    color: var(--primary-color);
-    font-size: 24px;
-}
-
-/**以上这部分与底栏有关/
-
 /*绘制地图*/
 #Map {
+    /* display: none: 设置隐藏 */
+    /* display: none; */
     width: 20%;
     height: 40%;
-    position: Fixed;
-    top: 200px;
-    left: 25px;
+    position: absolute;
+    top: 300px;
+    right: 850px;
     z-index: -1;
     /* position: relative;
     top:50px;
@@ -253,16 +213,27 @@ div p:hover {
     border-radius: 8px;
     padding: 5px;
     width: 50%;
-    height: 80%;
+    height: 75%;
     transform: translate(-40px, 15px);
 }
 
 /* 容器为栅格布局 */
 .container {
+    /* 网格布局 */
     display: grid;
-    box-shadow: 0px 10px 20px 5px lightgrey;
-    width: 700px;
-    margin: 100px auto;
+    /* 设置阴影 */
+    box-shadow: 0px 10px 20px 20px lightgrey;
+    /* 设置圆角 */
+    border-radius: 10px;
+    width: 680px;
+    /* margin: 100px auto:上边下边 左边右边 */
+    margin: 0px 200px 0 0;
+}
+
+/* title样式 */
+#title {
+    /* 不予显示 */
+    display: none;
 }
 
 /*侧边(左边)留距*/
@@ -295,37 +266,102 @@ footer {
 
 /* 电荷相关 */
 force_1 {
+    /* display: none; */
     position: Fixed;
-    top: 5px;
-    left: 28px;
+    top: 20px;
+    right: 28px;
 }
 
 force_2 {
     position: Fixed;
-    top: 80px;
-    right: 40px;
+    top: 140px;
+    right: 660px;
+    transform: rotate(87deg);
 }
 
 force_3 {
+    /* display: none; */
     position: Fixed;
-    top: 180px;
-    left: 0px;
+    top: 260px;
+    right: 330px;
+    transform: rotate(147deg);
 }
 
 force_4 {
     position: Fixed;
-    top: 380px;
-    right: 180px;
+    top: 280px;
+    right: 80px;
+    transform: rotate(200deg);
 }
 
 force_5 {
+    /* display: none; */
     position: Fixed;
-    top: 480px;
-    left: 160px;
+    top: 402px;
+    right: 620px;
+    transform: rotate(287deg);
 }
 
 force_6 {
     position: Fixed;
-    top: 600px;
-    right: 200px;
+    top: 520px;
+    right: 47px;
+    transform: rotate(187deg);
+}
+
+/* 饼图配置 */
+/* 提示框 */
+.tooltip {
+    font-family: simsun;
+    font-size: 14px;
+    width: 120;
+    height: auto;
+    position: absolute;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* 饼图 */
+svg_pie {
+    position: fixed;
+    top: 1px;
+    right: 300px;
+}
+
+/* 直方图布局配置 */
+svg_hist {
+    position: fixed;
+    top: 300px;
+    right: 300px;
+}
+
+/* 可视化布局 */
+svg_music {
+    position: absolute;
+    top: 398px;
+    left: 360px;
+    z-index: 1;
+}
+
+audio {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+a {
+    position: fixed;
+    bottom: 6px;
+    right: 300px;
+}
+
+/* 尝试隐藏滑动条 */
+::-webkit-scrollbar {
+    display: none;
+    /* Chrome Safari */
 }
