@@ -299,6 +299,16 @@ function Pie2(w, h, name, outerRadius) {
             })
             .attr("d", function (d) {
                 return arc(d);//将角度转为弧度（d3使用弧度绘制）
+            })
+            .on("mouseover", function (d, i) {
+                d3.select(this)
+                    .attr("fill", "#b700fbff");
+            })
+            .on("mouseout", function (d, i) {
+                svg.selectAll('path')
+                    .attr("fill", function (d, i) {
+                        return color(i);
+                    });
             });
 
         // 外圆环声明
@@ -316,10 +326,20 @@ function Pie2(w, h, name, outerRadius) {
             .attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")");
         arcs_outer.append("path")//每个g元素都追加一个path元素用绑定到这个g的数据d生成路径信息
             .attr("fill", function (d, i) {
-                return color(10 - i);
+                return color(i);
             })
             .attr("d", function (d) {
                 return arc_outer(d);//将角度转为弧度（d3使用弧度绘制）
+            })
+            .on("mouseover", function (d, i) {
+                d3.select(this)
+                    .attr("fill", "#b700fbff");
+            })
+            .on("mouseout", function (d, i) {
+                svg.selectAll('path')
+                    .attr("fill", function (d, i) {
+                        return color(i);
+                    });
             });
 
         // 内圆环移位与响应事件配置	
@@ -338,6 +358,7 @@ function Pie2(w, h, name, outerRadius) {
                 return d.data[0];
             })
             .on("mouseover", function (d, i) {
+
                 if (d.data[1] < 10) {
                     d3.select(this)
                         .attr("font-size", 10);
@@ -443,6 +464,16 @@ function Hist(width, height, where, path) {
             })
             .attr("width", rectWidth)		//设置矩形的宽度
             .attr("height", 0)
+            .on("mouseover", function (d, i) {
+                d3.select(this)
+                    .attr("fill", "#b700fbff");
+            })
+            .on("mouseout", function (d, i) {
+                d3.selectAll("rect")
+                    .attr("fill", function (d, i) {
+                        return color(i);
+                    });
+            })
             .transition()
             .duration(2400)
             .ease(d3.easeElasticOut)
@@ -483,7 +514,7 @@ function Hist(width, height, where, path) {
 }
 
 // 音乐可视化配置函数
-function music(width,height,innerR,where) {
+function music(width, height, innerR, where) {
     alert(">>页面加载完成后请点击右下角【Active Audio】以激活音乐控件！\n>>如果已点击请忽略。\n>>Designed by 李锦川")
     console.log("music is running...");
     var audioCtx = new (window.AudioContext || window.webkitAudioContext)();//创建了一个AudioContext
@@ -528,7 +559,7 @@ function music(width,height,innerR,where) {
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")//确定位置
         .attr("fill", function (d, i) {//填充颜色
             // return 'rgb(' + (255 - dataset[i][1]) + ',250,' + dataset[i][1] + ')';//这个颜色是随机的，难怪不好看
-            return 	"#9400D3";
+            return "#9400D3";
         })
         .attr("stroke", "#FFF")
         .attr("d", function (d, i) {
@@ -546,7 +577,7 @@ function music(width,height,innerR,where) {
                 return "#9400D3";
             })
             .attr("d", function (d, i) {
-                arcPath.outerRadius(frequencyData[i]/3.5 + innerR);//外径
+                arcPath.outerRadius(frequencyData[i] / 3.5 + innerR);//外径
                 return arcPath(d);
             });
     }

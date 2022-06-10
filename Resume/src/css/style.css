@@ -270,12 +270,14 @@ force_1 {
     position: Fixed;
     top: 20px;
     right: 28px;
+    z-index: 1;
 }
 
 force_2 {
     position: Fixed;
     top: 140px;
     right: 660px;
+    z-index: 1;
     transform: rotate(87deg);
 }
 
@@ -284,6 +286,7 @@ force_3 {
     position: Fixed;
     top: 260px;
     right: 330px;
+    z-index: 1;
     transform: rotate(147deg);
 }
 
@@ -291,6 +294,7 @@ force_4 {
     position: Fixed;
     top: 280px;
     right: 80px;
+    z-index: 1;
     transform: rotate(200deg);
 }
 
@@ -299,6 +303,7 @@ force_5 {
     position: Fixed;
     top: 402px;
     right: 620px;
+    z-index: 1;
     transform: rotate(287deg);
 }
 
@@ -306,6 +311,7 @@ force_6 {
     position: Fixed;
     top: 520px;
     right: 47px;
+    z-index: 1;
     transform: rotate(187deg);
 }
 
@@ -330,6 +336,7 @@ svg_pie {
     position: fixed;
     top: 1px;
     right: 300px;
+    z-index: 1;
 }
 
 /* 直方图布局配置 */
@@ -337,13 +344,14 @@ svg_hist {
     position: fixed;
     top: 300px;
     right: 300px;
+    z-index: 1;
 }
 
 /* 可视化布局 */
 svg_music {
     position: absolute;
     top: 398px;
-    left: 360px;
+    left: 367px;
     z-index: 1;
 }
 
