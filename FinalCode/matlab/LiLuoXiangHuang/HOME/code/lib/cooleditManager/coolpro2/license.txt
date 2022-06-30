@@ -1,0 +1,55 @@
+Cool Edit Pro 2.0
+
+ON-LINE LICENSE AGREEMENT
+
+IMPORTANT-READ CAREFULLY:
+
+This license agreement ("License") is a legal agreement between you (either an individual or a single entity) and Syntrillium Software Corporation (Syntrillium).  By installing, copying, or otherwise using the Software, you agree to be bound by the terms of this License. If you do not agree to the terms of this License, promptly return the unused Software to the place from which you obtained it for a full refund.
+
+LICENSOR: Syntrillium Software Corporation ("Syntrillium")
+
+Software: Cool Edit Pro 2.0, together with associated media and printed materials, including any "online" or electronic documentation (the "Software").
+
+The Software is the property of Syntrillium or its suppliers and is protected by United States Copyright Law and International treaty provisions.  Your rights and obligations with respect to the use of this Software are as follows:
+
+1.	GRANT OF LICENSE.  Syntrillium grants to you, and you accept by clicking the acceptance button, a non-exclusive license to use the Software on the following terms.
+
+· Software. You may install and use one copy of the Software on a single computer. The primary user of the computer on which the Software is installed may make a second copy for his or her exclusive use on a home or portable computer.
+ 
+· Storage/Network Use. You may also store or install a copy of the Software on a storage device, such as a network server, used only to install or run the Software on your other computers over an internal network.  However, you must acquire and dedicate a license for each separate computer on which the Software is installed or run from the storage device.  A license for the Software may not be shared or used concurrently on different computers.
+ 
+· Multi-User and Site License. If you have acquired a multi-user or site license for the Software, you may make the number of additional copies of the computer software portion of the Software authorized in your license agreement with Syntrillium, and you may use each copy in the manner specified above. You are also entitled to make a corresponding number of secondary copies for home or portable computer use as specified above.
+
+· Restrictions.  You may not: use, copy, modify, or transfer copies of the Software except as provided for in this License; permit concurrent use of the Software; remove any proprietary notices or labels from the Software; reverse engineer, decompile, disassemble or make derivative works based on the Software (except and only to the extent that such activity is expressly permitted by applicable law notwithstanding this limitation); or rent, lease, sublicense or assign the Software or any copy thereof, including any related documentation..
+
+· Separation of Components. The Software is licensed as a single product. Its component parts may not be separated for use on more than one computer.
+
+· Software Transfer. You may permanently transfer all of your rights under this License, provided you retain no copies, you transfer all of the Software (including all component parts, the media and printed materials, any upgrades, this License and, if applicable, the Certificate of Authenticity), and the recipient agrees to the terms of this License. If the Software is an upgrade. any transfer must include all prior versions of the Software.
+ 
+· Termination. Without prejudice to any other rights, Syntrillium may terminate this License if you fail to comply with the terms and conditions of this License. In such event, you must destroy all copies of the Software and all of its component parts.
+
+2.	INTELLECTUAL PROPERTY RIGHTS.  All ownership, title and intellectual property rights in and to the Software (including but not limited to any images, photographs, animations, video, audio, music, text and "applets" incorporated into the Software), and any copies you are permitted to make herein are owned by Syntrillium or its suppliers. All ownership, title and intellectual property rights in and to the content which may be accessed through use of the Software is the property of the respective content owner and may be protected by applicable copyright or other intellectual property laws and treaties. This License grants you no rights to use such content.
+
+3.	UPGRADES.  If the Software is an upgrade from another product, whether from Syntrillium or another supplier, you may use or transfer the Software only in conjunction with that upgraded product, unless you destroy the upgraded product.  If the Software is an upgrade of a Syntrillium product, you now may use that upgraded product only in accordance with this License.  If the Software is an upgrade of a component of a package of software programs that you licensed as a single product, the Software may be used and transferred only as part of that single product package and may not be separated for use on more than one computer.
+
+4.	DUAL-MEDIA SOFTWARE. You may receive the Software in more than one medium. Regardless of the type or size of medium you receive, you may use only one medium that is appropriate for your single computer. You may not use or install the other medium on another computer. You may not loan, rent, lease, or otherwise transfer the other medium to another user, except as part of the permanent transfer (as provided above) of the Software.
+ 
+5.	LIMITED WARRANTY. Syntrillium warrants that the Software will perform substantially in accordance with the accompanying written materials for a period of thirty (30) days from the date of receipt.  Some states and jurisdictions do not allow limitations on duration of an implied warranty, so the above limitation may not apply to you.  To the extent allowed by applicable law, implied warranties on the Software are limited to thirty (30) days.  Syntrillium's entire liability and your exclusive remedy for breach of the foregoing warranty shall be, at Syntrillium's option, either (a) return of the price paid, or (b) repair or replacement of the Software or that does not meet the foregoing warranty, provided the Software on original media is returned to Syntrillium with a copy of your receipt.  This Limited Warranty is void if failure of the Software resulted from accident, abuse, or misapplication.  Any replacement Software will be warranted for the remainder of the original warranty period or ten (10) days, whichever is longer.  Outside the United States, neither these remedies nor any product support services offered by Syntrillium are available without proof of purchase from an authorized international source.  TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, SYNTRILLIUM AND ITS SUPPLIERS DISCLAIM ALL OTHER WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF TITLE, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+6.	NO CONSEQUENTIAL DAMAGES. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL SYNTRILLIUM OR ITS SUPPLIERS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF DATA, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF SYNTRILLIUM HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+7.	SUPPORT AND UPDATES. This license does not entitle you to support, telephone assistance, enhancements or updates.
+
+8.	EXPORT CONTROL.  You may not export, ship, transmit or re-export the Software or related documentation in violation of any applicable law or regulation including, without limitations, the Export Administration Regulations issued by the United States Department of Commerce.
+ 
+9.	UNITED STATES GOVERNMENT RESTRICTED RIGHTS.  The Software and Documentation are provided with restricted rights.  If you are evaluating the purchase of the Software for use by the federal government or any of its agencies, you need to enter into a separate restricted rights agreement with Syntrillium.
+
+10.	APPLICABLE LAW.  This License is governed by the laws of the State of Arizona.
+
+Should you have any questions concerning this License, or if you desire to contact Syntrillium for any reason, please visit Syntrillium's website at www.syntrillium.com or write to: Syntrillium Software Corporation, P.O. Box 62255, Phoenix, AZ 85082-2255.
+
+YOUR ACCEPTANCE OF THE FOREGOING AGREEMENT WAS INDICATED DURING INSTALLATION.
+
+ (c) 2002 Syntrillium Software Corporation. All rights reserved.
+
+

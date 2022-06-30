@@ -1,0 +1,106 @@
+Collection: Effects
+
+Title: Reverse Echo
+Description: This script is used to create an effect where the echoes come before the sound.  This effect is used to create a ghostly sound.
+Description: To Use:  Open a file and don't make a selection.  Select this script, then click 'Run Script'.
+Description: This script can also be run on multiple files as a batch process.
+Mode: 2
+
+Selected: none at 0 scaled 352800 SR 44100
+cmd: Channel Both
+
+Selected: 0 to 352799 scaled 352800 SR 44100
+cmd: Reverse
+
+Selected: none at 352799 scaled 352800 SR 44100
+cmd: Generate Silence
+1: 10.0
+2: 10.0
+
+Selected: 0 to 352799 scaled 352800 SR 44100
+cmd: Delay Effects\Echo
+1: 64
+2: 400
+3: 25
+4: 25
+5: 1
+6: 1
+7: 0
+8: 0
+9: 0
+10: -1
+11: -15
+12: -15
+13: -15
+14: -15
+15: 64
+16: 600
+17: 0
+
+cmd: Reverse
+
+cmd: Amplitude\Normalize
+1: 1
+2: 0
+3: 0
+4: 0.98
+5: 0
+
+Selected: none at 0 scaled 352800 SR 44100
+End:
+
+
+
+Title: Crossfade Full
+Description: This script is used to crossfade the first half of the selection with the second half.  The resulting edit will be 1/2 the original size since both halves will be overlapping.
+Description: To Use:  Make a selection, select this script, then click 'Run Script'.
+Mode: 4
+
+
+Selected: 50 to 99 scaled 100 SR 44100
+cmd: Amplitude\Amplify
+1: 0
+2: 0
+3: 1
+4: 1
+5: 1
+6: 0
+7: 0
+8: 0
+9: 1
+10: 1
+
+Selected: 50 to 99 scaled 100 SR 44100
+cmd: Copy
+
+Selected: 0 to 49 scaled 100 SR 44100
+cmd: amplitude\Amplify
+1: 1
+2: 1
+3: 0
+4: 0
+5: 1
+6: 0
+7: 0
+8: 0
+9: 1
+10: 1
+
+
+Selected: 0 to 49 scaled 100 SR 44100
+cmd: Paste Special
+1: 1
+2: 1
+3: 3
+4: 1
+5: 0
+6: 0
+7: 
+8: 0
+
+Selected: 50 to 99 scaled 100 SR 44100
+cmd: Delete
+
+Selected: 0 to 49 scaled 100 SR 44100
+End:
+
